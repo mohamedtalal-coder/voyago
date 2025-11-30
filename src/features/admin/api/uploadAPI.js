@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-const API_BASE = '/api/upload';
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://voyago-backend.vercel.app/api';
+const API_BASE = `${API_BASE_URL}/upload`;
 
 export const uploadSingleImage = async (file) => {
   const formData = new FormData();

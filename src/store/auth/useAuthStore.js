@@ -2,7 +2,8 @@ import { create } from "zustand";
 import axios from "axios";
 import useAppStore from "./useAppStore";
 
-const API_URL = "/api/auth";
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://voyago-backend.vercel.app/api';
+const API_URL = `${API_BASE_URL}/auth`;
 
 const getUserFromStorage = () => {
   try {
