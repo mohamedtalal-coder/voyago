@@ -1,0 +1,112 @@
+{
+  "title": "Book Our Services",
+  "subtitle": "Choose from our premium selection of services for your adventure",
+  "form": {
+    "name": "Name and Surname",
+    "namePlaceholder": "Enter your name and surname",
+    "email": "Email Address",
+    "emailPlaceholder": "Enter your email address",
+    "phone": "Telephone Number",
+    "phonePlaceholder": "Enter your telephone number",
+    "service": "Service Type",
+    "selectService": "Select the service types",
+    "date": "Date",
+    "datePlaceholder": "Select the date",
+    "time": "Time",
+    "timePlaceholder": "Select the time",
+    "button": "Book Now",
+    "bookNowBike": "Book Now Bike",
+    "pickupDate": "Pickup Date",
+    "pickupTime": "Pickup Time",
+    "returnDate": "Return Date",
+    "pickupLocation": "Pickup Location",
+    "returnLocation": "Return Location",
+    "bikeType": "Bike Type",
+    "quantity": "Number of Bikes",
+    "accessories": "Accessories",
+    "specialRequests": "Special Requests",
+    "termsAccept": "I accept the terms and conditions"
+  },
+  "validation": {
+    "serviceRequired": "Please select a service",
+    "nameRequired": "Name is required",
+    "nameMin": "Name must be at least 2 characters",
+    "emailRequired": "Email is required",
+    "emailInvalid": "Please enter a valid email address",
+    "phoneRequired": "Phone number is required",
+    "phoneInvalid": "Please enter a valid phone number",
+    "dateRequired": "Please select a date",
+    "timeRequired": "Please select a time"
+  },
+  "bikeTypes": {
+    "city": "City Bike",
+    "mountain": "Mountain Bike",
+    "electric": "Electric Bike",
+    "road": "Road Bike",
+    "hybrid": "Hybrid Bike",
+    "tandem": "Tandem Bike"
+  },
+  "tourTypes": {
+    "walking": "Walking Tour",
+    "bike": "Bike Tour",
+    "bus": "Bus Tour",
+    "private": "Private Tour"
+  },
+  "hillTypes": {
+    "standard": "Standard Tour",
+    "premium": "Premium Experience",
+    "private": "Private Excursion"
+  },
+  "transportTypes": {
+    "shuttle": "Shuttle Bus",
+    "minibus": "Minibus",
+    "coach": "Full Coach"
+  },
+  "carTypes": {
+    "sedan": "Luxury Sedan",
+    "suv": "Premium SUV",
+    "limousine": "Limousine"
+  },
+  "wineTypes": {
+    "halfDay": "Half Day Tour",
+    "fullDay": "Full Day Tour",
+    "premium": "Premium Tasting"
+  },
+  "accessories": {
+    "helmet": "Helmet",
+    "lock": "Bike Lock",
+    "basket": "Basket",
+    "childSeat": "Child Seat",
+    "gps": "GPS Device",
+    "repairKit": "Repair Kit"
+  },
+  "pricing": {
+    "hourly": "Hourly Rate",
+    "daily": "Daily Rate",
+    "weekly": "Weekly Rate",
+    "deposit": "Security Deposit",
+    "total": "Total Price"
+  },
+  "locations": {
+    "mainOffice": "Main Office - City Center",
+    "trainStation": "Train Station",
+    "airport": "Airport",
+    "hotel": "Hotel Delivery"
+  },
+  "messages": {
+    "success": "Your bike has been booked successfully!",
+    "error": "There was an error processing your booking. Please try again.",
+    "confirmation": "A confirmation email has been sent to your address.",
+    "availability": "Checking availability...",
+    "notAvailable": "Sorry, this bike is not available for the selected dates."
+  },
+  "summary": {
+    "title": "Booking Summary",
+    "duration": "Rental Duration",
+    "selectedBike": "Selected Bike",
+    "selectedAccessories": "Selected Accessories",
+    "subtotal": "Subtotal",
+    "taxes": "Taxes & Fees",
+    "grandTotal": "Grand Total"
+  }
+}

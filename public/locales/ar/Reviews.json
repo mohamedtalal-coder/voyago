@@ -1,0 +1,17 @@
+{
+  "title": "ماذا يقول عملاؤنا",
+  "addReview": "أضف تقييم",
+  "noReviews": "لا توجد تقييمات حتى الآن. كن أول من يشارك تجربته!",
+  "writeReview": "اكتب تقييم",
+  "reviewSubmitted": "شكراً لك! تم إرسال تقييمك وهو قيد المراجعة للموافقة.",
+  "yourName": "اسمك",
+  "enterName": "أدخل اسمك",
+  "rating": "التقييم",
+  "yourReview": "تقييمك",
+  "writeYourReview": "شاركنا تجربتك...",
+  "submitReview": "إرسال التقييم",
+  "submitting": "جاري الإرسال...",
+  "loadingReviews": "جاري تحميل التقييمات...",
+  "fillAllFields": "يرجى ملء جميع الحقول",
+  "submitError": "فشل في إرسال التقييم"
+}

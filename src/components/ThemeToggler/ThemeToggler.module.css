@@ -1,0 +1,32 @@
+.toggler {
+  /* Use our new CSS variables */
+  background: var(--color-card-background);
+  border: 1px solid var(--color-border);
+  
+  /* Make it a circle */
+  border-radius: 50px;
+  
+  /* Sizing and layout */
+  padding: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  font-size: 1.2rem;
+  
+  /* This is for the animation */
+  overflow: hidden;
+  position: relative;
+
+  /* Smooth transition for when the border/bg color changes */
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* This will hold the icon */
+.icon {
+  display: block;
+  /* This is just to make sure the span doesn't add weird layout shifts */
+  line-height: 0; 
+}

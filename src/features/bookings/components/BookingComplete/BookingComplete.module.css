@@ -1,0 +1,152 @@
+.container {
+  min-height: 100vh;
+  background-color: var(--color-background);
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.successIcon {
+  margin-bottom: 2rem;
+}
+
+.iconCircle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary-text);
+  animation: scaleIn 0.5s ease-out;
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin: 0 0 1rem 0;
+}
+
+.message {
+  font-size: 1rem;
+  color: var(--color-text-muted);
+  margin: 0 0 2.5rem 0;
+  max-width: 500px;
+}
+
+.bookingDetails {
+  background-color: var(--color-background-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  max-width: 400px;
+  width: 100%;
+}
+
+.bookingDetails h3 {
+  margin: 0 0 1rem 0;
+  color: var(--color-primary);
+  font-size: 1.1rem;
+}
+
+.bookingDetails p {
+  margin: 0.5rem 0;
+  color: var(--color-text-secondary);
+}
+
+.discountLine {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #16a34a !important;
+}
+
+.discountAmount {
+  color: #16a34a;
+  font-weight: 600;
+}
+
+.totalLine {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.75rem;
+  margin-top: 0.75rem !important;
+  border-top: 1px solid var(--color-border);
+}
+
+.totalAmount {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.savedMessage {
+  margin-top: 1rem !important;
+  padding: 0.75rem;
+  background: rgba(34, 197, 94, 0.1);
+  border-radius: 0.5rem;
+  color: #16a34a !important;
+  font-weight: 600;
+  text-align: center;
+}
+
+.homeButton {
+  padding: 1rem 2.5rem;
+  border: 2px solid var(--color-primary);
+  background-color: transparent;
+  color: var(--color-primary);
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.homeButton:hover {
+  background-color: var(--color-primary);
+  color: var(--color-primary-text);
+}
+
+.homeButton:active {
+  transform: scale(0.98);
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .iconCircle {
+    width: 100px;
+    height: 100px;
+  }
+
+  .iconCircle svg {
+    width: 40px;
+    height: 40px;
+  }
+}

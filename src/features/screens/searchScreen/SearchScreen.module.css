@@ -1,0 +1,199 @@
+/* SearchScreen Styles */
+.searchScreen {
+  min-height: 100vh;
+  background-color: var(--color-background);
+  padding-top: 100px;
+  padding-bottom: 4rem;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+/* Header */
+.header {
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+/* Active Filters from Home Page */
+.activeFilters {
+  background-color: var(--color-card-background);
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow-card);
+}
+
+.filtersHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.filtersLabel {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.clearAllBtn {
+  background: none;
+  border: none;
+  color: var(--color-primary);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.clearAllBtn:hover {
+  background-color: var(--color-hover-light);
+}
+
+.filterTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.filterTag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: var(--color-primary);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.filterTag svg {
+  font-size: 14px;
+}
+
+.filterTag button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: white;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.filterTag button:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.filterTag button svg {
+  font-size: 12px;
+}
+
+/* Results Section */
+.resultsSection {
+  min-height: 400px;
+}
+
+.resultsList {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* Loader */
+.loaderWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+}
+
+/* No Results */
+.noResults {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: var(--color-card-background);
+  border-radius: 16px;
+  box-shadow: var(--shadow-card);
+}
+
+.noResultsIcon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.noResultsTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 0.5rem;
+}
+
+.noResultsMessage {
+  color: var(--color-text-muted);
+  font-size: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .searchScreen {
+    padding-top: 80px;
+    padding-bottom: 2rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .activeFilters {
+    padding: 1rem;
+  }
+
+  .filtersHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .noResults {
+    padding: 3rem 1.5rem;
+  }
+
+  .noResultsIcon {
+    font-size: 3rem;
+  }
+
+  .noResultsTitle {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    margin-bottom: 1.5rem;
+  }
+
+  .filterTag {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+}

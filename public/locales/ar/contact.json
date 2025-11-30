@@ -1,0 +1,19 @@
+{
+  "contactTitle": "تواصل معنا!",
+  "contactDescription": "املأ النموذج وسيتواصل معك فريقنا خلال 24 ساعة.",
+  "nameLabel": "الاسم و اللقب",
+  "namePlaceholder": "ادخل اسمك ولقبك",
+  "emailLabel": "البريد الإلكتروني",
+  "emailPlaceholder": "ادخل بريدك الإلكتروني",
+  "messageLabel": "الرسالة",
+  "messagePlaceholder": "اكتب رسالتك هنا",
+  "sendMessage": "إرسال الرسالة",
+  "sending": "جارٍ الإرسال...",
+  "pleaseFillAllFields": "يرجى ملء جميع الحقول",
+  "pleaseEnterValidEmail": "يرجى إدخال بريد إلكتروني صحيح",
+  "messageSentSuccess": "تم إرسال الرسالة بنجاح!",
+  "phoneCopied": "تم نسخ رقم الهاتف إلى الحافظة!",
+  "location": "مدينة الزقازيق، الشرقية، مصر",
+  "phone": "+20 111 893 6100",
+  "email": "voyagodepi@gmail.com"
+}

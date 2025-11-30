@@ -1,0 +1,337 @@
+/* SearchForm Styles */
+.searchFormContainer {
+  background-color: var(--color-card-background);
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: var(--shadow-card);
+  margin-bottom: 2rem;
+}
+
+/* Search Bar */
+.searchBar {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.searchInputWrapper {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-background-secondary);
+  border-radius: 12px;
+  padding: 0 1rem;
+  border: 2px solid transparent;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.searchInputWrapper:focus-within {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(11, 61, 94, 0.1);
+}
+
+.searchIcon {
+  color: var(--color-text-muted);
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.searchInput {
+  flex: 1;
+  border: none;
+  background: transparent;
+  padding: 1rem 0.75rem;
+  font-size: 16px;
+  color: var(--color-text);
+  outline: none;
+}
+
+.searchInput::placeholder {
+  color: var(--color-text-muted);
+}
+
+.clearButton {
+  background: none;
+  border: none;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.2s ease;
+}
+
+.clearButton:hover {
+  background-color: var(--color-hover-light);
+  color: var(--color-text);
+}
+
+/* Suggestions Dropdown */
+.suggestionsDropdown {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  background-color: var(--color-card-background);
+  border-radius: 12px;
+  box-shadow: var(--shadow-dropdown);
+  z-index: 100;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+}
+
+.suggestionItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 12px 16px;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  color: var(--color-text);
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.suggestionItem:hover {
+  background-color: var(--color-hover-bg);
+}
+
+.suggestionIcon {
+  color: var(--color-text-muted);
+  font-size: 16px;
+}
+
+/* Controls Row */
+.controlsRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.leftControls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.filterToggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background-color: var(--color-background-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  color: var(--color-text);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filterToggle:hover {
+  border-color: var(--color-primary);
+}
+
+.filterToggle.active {
+  background-color: var(--color-primary);
+  color: white;
+  border-color: var(--color-primary);
+}
+
+.filterBadge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-primary);
+  color: white;
+  font-size: 11px;
+  font-weight: 600;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.filterToggle.active .filterBadge {
+  background-color: white;
+  color: var(--color-primary);
+}
+
+.clearFiltersBtn {
+  padding: 10px 16px;
+  background: none;
+  border: none;
+  color: var(--color-primary);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.clearFiltersBtn:hover {
+  color: var(--color-primary-dark);
+  text-decoration: underline;
+}
+
+.rightControls {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.resultsCount {
+  color: var(--color-text-muted);
+  font-size: 14px;
+}
+
+.sortWrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sortLabel {
+  color: var(--color-text-muted);
+  font-size: 14px;
+}
+
+.sortSelect {
+  padding: 8px 12px;
+  background-color: var(--color-background-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  color: var(--color-text);
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.sortSelect:focus {
+  border-color: var(--color-primary);
+}
+
+/* Filters Panel */
+.filtersPanel {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  padding-top: 1.5rem;
+  margin-top: 1rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.filterGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.filterLabel {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-text);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.filterSelect {
+  padding: 10px 12px;
+  background-color: var(--color-background-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  color: var(--color-text);
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.filterSelect:focus {
+  border-color: var(--color-primary);
+}
+
+.priceInputs {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.priceInput {
+  flex: 1;
+  padding: 10px 12px;
+  background-color: var(--color-background-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  color: var(--color-text);
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.priceInput:focus {
+  border-color: var(--color-primary);
+}
+
+.priceInput::placeholder {
+  color: var(--color-text-muted);
+}
+
+.priceSeparator {
+  color: var(--color-text-muted);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .filtersPanel {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .searchFormContainer {
+    padding: 1rem;
+  }
+
+  .controlsRow {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .leftControls {
+    justify-content: space-between;
+  }
+
+  .rightControls {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+  }
+
+  .sortWrapper {
+    justify-content: space-between;
+  }
+
+  .resultsCount {
+    text-align: center;
+  }
+
+  .filtersPanel {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .filterToggle span {
+    display: none;
+  }
+
+  .filterToggle {
+    padding: 10px 12px;
+  }
+}

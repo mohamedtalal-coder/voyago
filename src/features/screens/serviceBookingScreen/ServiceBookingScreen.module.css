@@ -1,0 +1,189 @@
+.bookingWrapper {
+  padding-top: 110px; 
+  min-height: 100vh;
+  background-color: var(--color-background-secondary);
+}
+
+.progressBar {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center !important;
+  align-items: flex-start !important;
+  gap: 0 !important;
+  flex-wrap: nowrap !important;
+  padding: 2rem;
+}
+
+.step {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center;
+  position: relative;
+  width: 120px;
+  flex-shrink: 0;
+}
+
+.step:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: calc(50% + 25px);
+  width: calc(100% - 50px);
+  height: 2px;
+  background-color: var(--color-border);
+}
+
+[dir="rtl"] .step:not(:last-child)::after {
+  left: auto;
+  right: calc(50% + 25px);
+}
+
+.step.active:not(:last-child)::after {
+  background-color: var(--color-primary);
+}
+
+.step span {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--color-background-alt);
+  border: 2px solid var(--color-border);
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.step.active span {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  color: var(--color-primary-text);
+}
+
+.step p {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  font-weight: 500;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.step.active p {
+  color: var(--color-primary);
+}
+
+.bookingLayout {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.formSection {
+  background: var(--color-card-background);
+  border-radius: 0.75rem;
+  padding: 2rem;
+  box-shadow: var(--shadow-card);
+}
+
+.summarySection {
+  position: sticky;
+  top: 2rem;
+  height: fit-content;
+}
+
+@media (max-width: 768px) {
+  .bookingWrapper {
+    padding-top: 90px;
+  }
+  
+  .bookingLayout {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+  
+  .progressBar {
+    padding: 1rem 0.5rem;
+  }
+  
+  .step {
+    width: 90px;
+  }
+  
+  .step span {
+    width: 32px;
+    height: 32px;
+    font-size: 0.875rem;
+  }
+  
+  .step p {
+    font-size: 0.7rem;
+    white-space: normal;
+    line-height: 1.2;
+  }
+  
+  .step:not(:last-child)::after {
+    top: 16px;
+    left: calc(50% + 20px);
+    width: calc(100% - 40px);
+  }
+  
+  [dir="rtl"] .step:not(:last-child)::after {
+    left: auto;
+    right: calc(50% + 20px);
+  }
+  
+  .formSection {
+    padding: 1.5rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .bookingWrapper {
+    padding-top: 80px;
+  }
+  
+  .progressBar {
+    padding: 0.75rem 0.25rem;
+  }
+  
+  .step {
+    width: 70px;
+  }
+  
+  .step span {
+    width: 28px;
+    height: 28px;
+    font-size: 0.75rem;
+  }
+  
+  .step p {
+    font-size: 0.6rem;
+  }
+  
+  .step:not(:last-child)::after {
+    top: 14px;
+    left: calc(50% + 18px);
+    width: calc(100% - 36px);
+  }
+  
+  [dir="rtl"] .step:not(:last-child)::after {
+    left: auto;
+    right: calc(50% + 18px);
+  }
+  
+  .bookingLayout {
+    padding: 0.75rem;
+  }
+  
+  .formSection {
+    padding: 1rem 0.75rem;
+    border-radius: 0.5rem;
+  }
+}

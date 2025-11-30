@@ -1,0 +1,13 @@
+.forgotLink {
+  font-size: 0.75rem;
+  color: var(--color-text-light);
+  text-align: right;
+  cursor: pointer;
+  font-weight: 400;
+}
+.forgotLink:hover {
+  color: var(--color-primary-accent);
+}
+[dir="rtl"] .forgotLink {
+  text-align: left;
+}

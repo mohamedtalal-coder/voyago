@@ -1,0 +1,200 @@
+/* Shared base styles for all static pages */
+
+.pageContainer {
+  min-height: 100vh;
+  background: var(--bg);
+}
+
+.hero {
+  background: linear-gradient(135deg, var(--accent) 0%, var(--color-primary-dark) 100%);
+  padding: 60px 24px;
+  text-align: center;
+  color: white;
+}
+
+.heroContent {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.heroTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0 0 16px 0;
+}
+
+.heroSubtitle {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin: 0;
+}
+
+.content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 48px 24px 80px;
+}
+
+.lastUpdated {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-bottom: 32px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.sectionTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text);
+  margin: 0 0 16px 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.sectionTitle svg {
+  color: var(--accent);
+}
+
+.sectionContent {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+.sectionContent p {
+  margin: 0 0 16px 0;
+}
+
+.sectionContent ul {
+  margin: 16px 0;
+  padding-left: 24px;
+}
+
+.sectionContent ul li {
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.sectionContent ul li::marker {
+  color: var(--accent);
+}
+
+.sectionContent a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.sectionContent a:hover {
+  text-decoration: underline;
+}
+
+.card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+  border: 1px solid var(--border);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.cardTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text);
+  margin: 0 0 12px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cardTitle svg {
+  color: var(--accent);
+}
+
+.cardContent {
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.contactBox {
+  background: linear-gradient(135deg, var(--accent) 0%, var(--color-primary-dark) 100%);
+  border-radius: 12px;
+  padding: 32px;
+  color: white;
+  text-align: center;
+  margin-top: 48px;
+}
+
+.contactBox h3 {
+  margin: 0 0 12px 0;
+  font-size: 1.4rem;
+}
+
+.contactBox p {
+  margin: 0 0 20px 0;
+  opacity: 0.9;
+}
+
+.contactLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: white;
+  color: var(--accent);
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.contactLink:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Highlight box */
+.highlightBox {
+  background: linear-gradient(135deg, rgba(14, 75, 116, 0.08) 0%, rgba(14, 75, 116, 0.04) 100%);
+  border-left: 4px solid var(--accent);
+  padding: 20px 24px;
+  border-radius: 0 12px 12px 0;
+  margin: 24px 0;
+}
+
+.highlightBox p {
+  margin: 0;
+  color: var(--text);
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 2rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1rem;
+  }
+
+  .content {
+    padding: 32px 16px 60px;
+  }
+
+  .sectionTitle {
+    font-size: 1.3rem;
+  }
+}

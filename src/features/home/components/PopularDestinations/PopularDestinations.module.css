@@ -1,0 +1,450 @@
+/* src/features/home/PopularDestinations.module.css */
+
+.travel-section-container {
+  padding: 50px 20px;
+  max-width: 1300px;
+  margin: 0 auto;
+  margin-top: 60px;
+  font-family: "Inter", Arial, sans-serif;
+  color: var(--color-text);
+}
+
+.travel-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.travel-section-title {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: var(--color-dark-blue);
+}
+
+.travel-nav-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.travel-nav-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  outline: none;
+  font-size: 18px;
+}
+
+.travel-nav-button-prev {
+  border: 1px solid var(--color-border-light);
+  background-color: transparent;
+  color: var(--color-icon-muted);
+}
+
+.travel-nav-button-next {
+  background-color: var(--color-dark-blue);
+  border: 1px solid var(--color-dark-blue);
+  color: var(--color-white);
+}
+
+.travel-nav-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  pointer-events: none;
+  background-color: var(--color-button-disabled-bg) !important;
+  border-color: var(--color-button-disabled-border) !important;
+  color: var(--color-button-disabled-text) !important;
+  transform: scale(1) !important;
+}
+
+.travel-nav-button-prev:hover {
+  border-color: var(--color-dark-blue);
+  color: var(--color-dark-blue);
+  transform: scale(1.05);
+}
+
+.travel-nav-button-next:hover {
+  background-color: var(--color-dark-blue-hover);
+  border-color: var(--color-dark-blue-hover);
+  transform: scale(1.05);
+}
+
+.travel-tours-wrapper {
+  display: flex;
+  gap: 24px;
+  overflow-x: hidden;
+  padding-bottom: 20px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  justify-content: center;
+}
+
+.travel-tours-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+/* Card styling - responsive widths handled by Slider */
+.travel-tour-card {
+  background-color: var(--color-white);
+  border-radius: 24px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 320px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  margin: 5px auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.travel-tour-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+.travel-card-image {
+  height: 220px;
+  overflow: hidden;
+}
+
+.travel-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  transition: transform 0.3s ease;
+}
+
+.travel-tour-card:hover .travel-card-image img {
+  transform: scale(1.05);
+}
+
+.travel-card-content {
+  padding: 18px 18px 22px 18px;
+}
+
+.travel-card-title {
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--color-dark-blue);
+  line-height: 1.3;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.travel-card-price {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--color-dark-blue);
+  margin-bottom: 12px;
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+}
+
+.travel-price-from {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--color-meta-text);
+}
+
+.travel-tour-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: var(--color-meta-text);
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid var(--color-border-light);
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.travel-meta-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.travel-meta-icon {
+  font-size: 14px;
+  color: var(--color-dark-blue);
+}
+
+.travel-card-details {
+  color: var(--color-description-text);
+  font-size: 13px;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* --- Responsive Design --- */
+
+/* Large screens (1200px+) - 4 cards */
+@media (min-width: 1200px) {
+  .travel-section-container {
+    padding: 50px 30px;
+  }
+  
+  .travel-tour-card {
+    max-width: 290px;
+  }
+  
+  .travel-card-image {
+    height: 230px;
+  }
+}
+
+/* Medium-large screens (992px - 1199px) - 3 cards */
+@media (max-width: 1199px) and (min-width: 992px) {
+  .travel-section-container {
+    padding: 45px 25px;
+  }
+  
+  .travel-tour-card {
+    max-width: 300px;
+  }
+  
+  .travel-card-image {
+    height: 220px;
+  }
+}
+
+/* Tablets (768px - 991px) - 2 cards */
+@media (max-width: 991px) and (min-width: 768px) {
+  .travel-section-container {
+    padding: 40px 20px;
+    margin-top: 40px;
+  }
+  
+  .travel-section-title {
+    font-size: 26px;
+  }
+  
+  .travel-tour-card {
+    max-width: 340px;
+  }
+  
+  .travel-card-image {
+    height: 200px;
+  }
+  
+  .travel-card-content {
+    padding: 16px;
+  }
+  
+  .travel-card-title {
+    font-size: 16px;
+  }
+  
+  .travel-card-price {
+    font-size: 16px;
+  }
+}
+
+/* Small tablets / Large phones (576px - 767px) - 1-2 cards */
+@media (max-width: 767px) {
+  .travel-section-container {
+    padding: 35px 15px;
+    margin-top: 30px;
+  }
+
+  .travel-header-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .travel-section-title {
+    font-size: 24px;
+  }
+
+  .travel-nav-buttons {
+    align-self: flex-end;
+  }
+  
+  .travel-tour-card {
+    max-width: 360px;
+  }
+  
+  .travel-card-image {
+    height: 200px;
+  }
+  
+  .travel-card-content {
+    padding: 15px;
+  }
+  
+  .travel-card-title {
+    font-size: 16px;
+  }
+  
+  .travel-card-price {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .travel-tour-meta {
+    font-size: 12px;
+  }
+  
+  .travel-card-details {
+    font-size: 13px;
+  }
+}
+
+/* Mobile phones (max 575px) - 1 card */
+@media (max-width: 575px) {
+  .travel-section-container {
+    padding: 25px 12px;
+    margin-top: 20px;
+  }
+
+  .travel-section-title {
+    font-size: 22px;
+  }
+
+  .travel-nav-buttons {
+    align-self: center;
+  }
+  
+  .travel-nav-button {
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+  }
+  
+  .travel-tour-card {
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 16px;
+  }
+  
+  .travel-card-image {
+    height: 180px;
+  }
+  
+  .travel-card-image img {
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .travel-card-content {
+    padding: 14px;
+  }
+  
+  .travel-card-title {
+    font-size: 15px;
+    white-space: normal;
+  }
+  
+  .travel-card-price {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .travel-price-from {
+    font-size: 12px;
+  }
+  
+  .travel-tour-meta {
+    font-size: 11px;
+    gap: 6px;
+  }
+  
+  .travel-meta-icon {
+    font-size: 12px;
+  }
+  
+  .travel-card-details {
+    font-size: 12px;
+    -webkit-line-clamp: 3;
+  }
+}
+
+/* Very small phones (max 400px) */
+@media (max-width: 400px) {
+  .travel-section-container {
+    padding: 20px 10px;
+  }
+  
+  .travel-section-title {
+    font-size: 20px;
+  }
+  
+  .travel-card-image {
+    height: 160px;
+  }
+  
+  .travel-card-content {
+    padding: 12px;
+  }
+  
+  .travel-card-title {
+    font-size: 14px;
+  }
+  
+  .travel-card-price {
+    font-size: 14px;
+  }
+}
+
+/* --- RTL (Right-to-Left) Customization --- */
+
+[dir="rtl"] .travel-section-container {
+  direction: rtl;
+}
+
+[dir="rtl"] .travel-header-row {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .travel-card-content {
+  text-align: right;
+}
+
+[dir="rtl"] .travel-tour-meta {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .travel-meta-item {
+  flex-direction: row-reverse;
+  gap: 6px;
+}
+
+[dir="rtl"] .travel-meta-icon {
+  margin-right: 0;
+  margin-left: 6px;
+}
+
+[dir="rtl"] .travel-nav-buttons {
+  flex-direction: row-reverse;
+}
+
+/* RTL responsive adjustments */
+@media (max-width: 767px) {
+  [dir="rtl"] .travel-header-row {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  [dir="rtl"] .travel-nav-buttons {
+    align-self: flex-start;
+  }
+}
+
+@media (max-width: 575px) {
+  [dir="rtl"] .travel-nav-buttons {
+    align-self: center;
+  }
+}

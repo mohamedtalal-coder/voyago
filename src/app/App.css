@@ -1,0 +1,13 @@
+/* Page wrapper for pages that need navbar spacing */
+/* Home and About pages have hero sections that go behind the navbar */
+/* Other pages need this spacing to push content below the navbar */
+.pageWithNavbarSpacing {
+  padding-top: 100px;
+  min-height: 100vh;
+}
+
+@media (max-width: 991px) {
+  .pageWithNavbarSpacing {
+    padding-top: 80px;
+  }
+}

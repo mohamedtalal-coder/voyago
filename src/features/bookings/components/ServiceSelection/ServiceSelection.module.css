@@ -1,0 +1,294 @@
+/* ServiceSelection Styles */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* No Service State */
+.noService {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: var(--color-card-background);
+  border-radius: 16px;
+  box-shadow: var(--shadow-card);
+}
+
+.noService h2 {
+  font-size: 1.5rem;
+  color: var(--color-text);
+  margin-bottom: 1rem;
+}
+
+.noService p {
+  color: var(--color-text-muted);
+}
+
+/* Service Card */
+.serviceCard {
+  display: flex;
+  gap: 1.5rem;
+  background-color: var(--color-card-background);
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: var(--shadow-card);
+}
+
+.serviceImage {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.serviceDetails {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.serviceName {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 0.5rem;
+}
+
+.serviceDesc {
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+/* Configuration Section */
+.configSection {
+  background-color: var(--color-card-background);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: var(--shadow-card);
+}
+
+.field {
+  margin-bottom: 1.5rem;
+}
+
+.label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 0.5rem;
+}
+
+/* Custom Dropdown */
+.customDropdown {
+  position: relative;
+}
+
+.dropdownTrigger {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  background-color: var(--color-background);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  font-size: 14px;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.dropdownTrigger:hover {
+  border-color: var(--color-primary);
+}
+
+.dropdownTrigger.hasValue {
+  color: var(--color-text);
+}
+
+.dropdownIcon {
+  transition: transform 0.2s ease;
+}
+
+.dropdownIcon.open {
+  transform: rotate(180deg);
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: var(--color-card-background);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  margin-top: 4px;
+  padding: 8px 0;
+  list-style: none;
+  z-index: 10;
+  box-shadow: var(--shadow-card);
+}
+
+.dropdownItem {
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  color: var(--color-text);
+}
+
+.dropdownItem:hover {
+  background-color: var(--color-hover-light);
+}
+
+.dropdownItem.selected {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+/* Date Time Row */
+.dateTimeRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Quantity Section */
+.quantitySection {
+  margin-bottom: 2rem;
+}
+
+.quantityControls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.quantityButton {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-background);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  color: var(--color-text);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.quantityButton:hover:not(:disabled) {
+  background-color: var(--color-primary);
+  color: white;
+  border-color: var(--color-primary);
+}
+
+.quantityButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.quantityValue {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-text);
+  min-width: 40px;
+  text-align: center;
+}
+
+/* Total Section */
+.totalSection {
+  border-top: 1px solid var(--color-border);
+  padding-top: 1.5rem;
+}
+
+.totalRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.totalLabel {
+  font-size: 1rem;
+  color: var(--color-text);
+}
+
+.totalPrice {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.nextButton {
+  width: 100%;
+  padding: 14px 24px;
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.nextButton:hover:not(:disabled) {
+  background-color: var(--color-primary-dark);
+}
+
+.nextButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .serviceCard {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .serviceImage {
+    width: 100%;
+    height: 200px;
+  }
+
+  .dateTimeRow {
+    grid-template-columns: 1fr;
+  }
+
+  .configSection {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .serviceName {
+    font-size: 1.25rem;
+  }
+
+  .totalPrice {
+    font-size: 1.5rem;
+  }
+}

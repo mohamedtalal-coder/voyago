@@ -1,0 +1,65 @@
+.serviceCard {
+  border: none !important;
+  border-radius: 8px;
+  background-color: var(--color-card-background) !important;
+  box-shadow: var(--shadow-card); 
+  height: 100%;
+  color: var(--color-text) !important;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.serviceCard .card-body {
+  background-color: transparent !important;
+  color: var(--color-text) !important;
+  transition: color 0.3s ease;
+}
+
+.serviceCard .card-title {
+  color: var(--color-text) !important;
+  transition: color 0.3s ease;
+}
+
+.serviceCard .card-text {
+  color: var(--color-text-light) !important;
+  transition: color 0.3s ease;
+}
+
+.cardImage {
+  height: 200px;
+  object-fit: cover;
+  /* Add top radius to match the card */
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.cardBody {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardActions {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 12px;
+}
+
+.readMore {
+  cursor: pointer;
+  font-size: 15px;
+  /* Use theme variables */
+  color: var(--color-primary-accent);
+  font-weight: 600;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.readMore:hover {
+  color: var(--color-primary-accent-hover);
+  text-decoration: underline;
+}
+
+.readMore:active {
+  color: var(--color-primary-accent-active);
+}

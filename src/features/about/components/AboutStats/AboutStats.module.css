@@ -1,0 +1,152 @@
+.statsSection {
+  margin: 70px 0;
+  padding: 70px 20px;
+}
+
+.aboutImgContainer {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  transition: transform 0.3s ease;
+}
+
+.aboutImgContainer:hover {
+  transform: scale(1.02);
+}
+
+.aboutImg {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.sectionSubtitle {
+  color: var(--color-primary);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 25px;
+  line-height: 1.2;
+  color: var(--color-dark-blue);
+}
+
+.sectionDesc {
+  color: var(--color-text-secondary);
+  margin-bottom: 40px;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+.statsRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.statItem {
+  flex: 1 1 20%;
+  min-width: 100px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: var(--color-background-secondary);
+  transition: all 0.3s ease;
+}
+
+.statItem:hover {
+  background-color: var(--color-hover-bg);
+  transform: translateY(-5px);
+}
+
+.statNumber {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--color-primary);
+  display: block;
+  margin-bottom: 5px;
+}
+
+.statLabel {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  line-height: 1.2;
+}
+
+@media (max-width: 992px) {
+  .statsSection {
+    padding: 50px 15px;
+  }
+  
+  .sectionTitle {
+    font-size: 1.8rem;
+  }
+  
+  .sectionDesc {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .statsSection {
+    margin: 50px 0;
+    padding: 40px 15px;
+  }
+  
+  .sectionTitle {
+    font-size: 1.6rem;
+  }
+  
+  .statsRow {
+    gap: 15px;
+  }
+  
+  .statItem {
+    padding: 15px;
+    min-width: 120px;
+  }
+  
+  .statNumber {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .statsSection {
+    margin: 40px 0;
+    padding: 30px 10px;
+  }
+  
+  .sectionTitle {
+    font-size: 1.4rem;
+  }
+  
+  .sectionDesc {
+    font-size: 0.9rem;
+  }
+  
+  .statsRow {
+    flex-direction: column;
+  }
+  
+  .statItem {
+    min-width: auto;
+    width: 100%;
+  }
+  
+  .statNumber {
+    font-size: 1.5rem;
+  }
+  
+  .statLabel {
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,159 @@
+/* Footer.module.css */
+
+.footer {
+  background: var(--footer-bg);
+  color: var(--footer-text);
+  padding: 48px 0 28px 0;
+  font-family: Inter, Arial, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 28px;
+  align-items: start;
+}
+
+.col h5 {
+  margin: 0 0 12px 0;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.col ul li a {
+  color: var(--muted);
+  font-size: 14px;
+  text-decoration: none;
+  display: block;
+  padding: 10px 0;
+  margin: 0;
+  transition: color 0.2s;
+}
+
+.col ul li {
+  margin: 0; 
+  padding: 0;
+}
+
+.col ul li a:hover {
+  color: var(--footer-text);
+  text-decoration: underline;
+}
+
+.colContact ul li {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin: 10px 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* RTL support for contact list */
+[dir="rtl"] .colContact ul li {
+  flex-direction: row;
+}
+
+.colContact ul li a {
+  display: inline;
+  padding: 0;
+}
+
+.contactIcon {
+  opacity: 0.9;
+  color: var(--accent);
+  display: flex;
+}
+
+.socials {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.socialBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.socialBtn:hover {
+  background: rgba(14, 75, 116, 0.95);
+  color: white;
+}
+
+.divider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.04);
+  margin: 22px 0;
+}
+
+.copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  text-align: center;
+  color: var(--muted);
+  padding: 14px 0 0 0;
+  font-size: 13px;
+}
+
+.copyright p {
+  margin: 0;
+}
+
+.copyrightLinks {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.copyrightLinks a {
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.copyrightLinks a:hover {
+  color: var(--footer-text);
+  text-decoration: underline;
+}
+
+.copyrightLinks span {
+  opacity: 0.5;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .socials {
+    gap: 8px
+  }
+}

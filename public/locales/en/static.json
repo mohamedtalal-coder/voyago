@@ -1,0 +1,301 @@
+{
+  "faq": {
+    "pageTitle": "Frequently Asked Questions",
+    "pageSubtitle": "Find answers to common questions about booking tours, payments, and more. Can't find what you're looking for? Contact our support team.",
+    "stillHaveQuestions": "Still Have Questions?",
+    "stillHaveQuestionsDesc": "Our friendly support team is here to help you with any questions you may have.",
+    "contactSupport": "Contact Support",
+    "categories": {
+      "booking": {
+        "title": "Booking & Reservations",
+        "questions": [
+          {
+            "q": "How do I make a booking?",
+            "a": "Making a booking is easy! Simply browse our tours, select your preferred date and number of travelers, fill in your details, and complete the payment. You'll receive a confirmation email with all the details within minutes."
+          },
+          {
+            "q": "Can I modify my booking after confirmation?",
+            "a": "Yes, you can modify your booking up to 48 hours before the tour date. Log into your account, go to \"My Bookings,\" and select the booking you wish to modify. Some changes may incur additional fees depending on availability."
+          },
+          {
+            "q": "What is your cancellation policy?",
+            "a": "Our standard cancellation policy offers: Full refund (minus processing fees) for cancellations 30+ days before the tour; 75% refund for 15-30 days; 50% refund for 7-14 days; No refund for cancellations less than 7 days before the tour."
+          },
+          {
+            "q": "Do I need to print my booking confirmation?",
+            "a": "No, you don't need to print your confirmation. Simply show the confirmation email or your booking in the Voyago app on your smartphone to the tour guide."
+          },
+          {
+            "q": "Can I book for someone else?",
+            "a": "Yes, you can book tours for friends or family. Simply enter their details as the traveler information during the booking process."
+          }
+        ]
+      },
+      "payment": {
+        "title": "Payment & Pricing",
+        "questions": [
+          {
+            "q": "What payment methods do you accept?",
+            "a": "We accept all major credit cards (Visa, MasterCard, American Express), debit cards, and PayPal. All transactions are processed through secure, encrypted connections."
+          },
+          {
+            "q": "Are there any hidden fees?",
+            "a": "No, we believe in transparent pricing. The price you see includes all applicable taxes and fees."
+          },
+          {
+            "q": "When will I be charged?",
+            "a": "Payment is processed immediately when you confirm your booking. This secures your spot on the tour."
+          },
+          {
+            "q": "Do you offer group discounts?",
+            "a": "Yes! We offer discounts for groups of 6 or more people. Contact our team directly to get a custom quote for your group."
+          },
+          {
+            "q": "What currency are prices displayed in?",
+            "a": "Prices are displayed in the local currency of the tour destination. During checkout, you'll see the final amount with the current exchange rate."
+          }
+        ]
+      },
+      "tours": {
+        "title": "Tours & Experiences",
+        "questions": [
+          {
+            "q": "What should I bring on a tour?",
+            "a": "We recommend bringing: comfortable walking shoes, weather-appropriate clothing, sunscreen and sunglasses, a water bottle, your camera, and any personal medications."
+          },
+          {
+            "q": "Are your tours suitable for people with mobility issues?",
+            "a": "Many of our tours can accommodate guests with mobility issues. Look for the accessibility icon on tour listings, or contact us before booking to discuss your specific needs."
+          },
+          {
+            "q": "What happens if the weather is bad?",
+            "a": "Most tours operate rain or shine. However, if weather conditions are dangerous, we'll reschedule or offer a full refund."
+          },
+          {
+            "q": "What languages are tours available in?",
+            "a": "Our tours are primarily conducted in English and Italian. Some tours offer additional languages including Spanish, French, and German."
+          },
+          {
+            "q": "Are children allowed on tours?",
+            "a": "Yes, children are welcome on most tours. Children under 3 are usually free, and discounts are available for children aged 3-12."
+          }
+        ]
+      },
+      "account": {
+        "title": "Account & Support",
+        "questions": [
+          {
+            "q": "How do I create an account?",
+            "a": "Click the \"Sign Up\" button in the top right corner. You can register using your email address or sign up with your Google account."
+          },
+          {
+            "q": "I forgot my password. How can I reset it?",
+            "a": "Click \"Login,\" then select \"Forgot Password.\" Enter your registered email address, and we'll send you a link to reset your password."
+          },
+          {
+            "q": "How can I contact customer support?",
+            "a": "You can reach us through email at support@voyago.com, phone at +20 111 893 6100, or the contact form on our website."
+          },
+          {
+            "q": "Can I leave a review for my tour?",
+            "a": "Absolutely! After your tour, you'll receive an email inviting you to share your experience."
+          }
+        ]
+      }
+    }
+  },
+  "privacy": {
+    "pageTitle": "Privacy Policy",
+    "pageSubtitle": "Your privacy is important to us. This policy explains how we collect, use, and protect your personal information.",
+    "lastUpdated": "Last Updated: November 27, 2025",
+    "sections": {
+      "introduction": {
+        "title": "Introduction",
+        "content": "Welcome to Voyago. We are committed to protecting your personal information and being transparent about the information we collect about you."
+      },
+      "infoCollect": {
+        "title": "Information We Collect",
+        "items": [
+          "Personal Identification Information: Name, email address, phone number",
+          "Payment Information: Credit card details (processed securely)",
+          "Booking Information: Tour preferences, travel dates, group size",
+          "Account Information: Login credentials, profile details",
+          "Communication Data: Messages and inquiries you send us"
+        ]
+      },
+      "howWeUse": {
+        "title": "How We Use Your Information",
+        "content": "We use your information to process bookings, communicate about your tours, improve our services, and send promotional offers (with your consent)."
+      },
+      "infoSharing": {
+        "title": "Information Sharing",
+        "items": [
+          "Service Providers: We may share information with partners who help us operate",
+          "Tour Partners: Your details may be shared with tour operators",
+          "Legal Requirements: We may disclose information if required by law",
+          "Business Transfers: In case of merger or acquisition"
+        ]
+      },
+      "cookies": {
+        "title": "Cookies and Tracking",
+        "content": "We use cookies to improve your experience, analyze site traffic, and personalize content. You can control cookie settings in your browser."
+      },
+      "security": {
+        "title": "Data Security",
+        "content": "We implement industry-standard security measures to protect your information. However, no method of transmission over the internet is 100% secure."
+      },
+      "rights": {
+        "title": "Your Rights",
+        "content": "You have the right to access, correct, delete your personal information, and opt out of marketing communications."
+      }
+    },
+    "contactTitle": "Questions About Your Privacy?",
+    "contactUs": "Contact Us"
+  },
+  "terms": {
+    "pageTitle": "Terms of Service",
+    "pageSubtitle": "Please read these terms carefully before using our services.",
+    "lastUpdated": "Last Updated: November 27, 2025",
+    "sections": {
+      "agreement": {
+        "title": "Agreement to Terms",
+        "content": "By accessing and using Voyago's services, you agree to be bound by these Terms of Service and all applicable laws and regulations."
+      },
+      "booking": {
+        "title": "Booking and Reservations",
+        "items": [
+          "Booking Confirmation: All bookings are subject to availability and confirmation",
+          "Accuracy of Information: You must provide accurate traveler information",
+          "Age Requirements: Some tours have minimum age requirements",
+          "Group Bookings: Special terms may apply to group reservations"
+        ]
+      },
+      "pricing": {
+        "title": "Pricing and Payment",
+        "items": [
+          "Currency: Prices are displayed in Euros (€)",
+          "Price Changes: Prices may change without notice until booking is confirmed",
+          "Payment Methods: We accept major credit cards and PayPal",
+          "Taxes: All applicable taxes are included in displayed prices"
+        ]
+      },
+      "cancellation": {
+        "title": "Cancellation and Refund Policy",
+        "items": [
+          "30+ days before tour: 100% refund (minus processing fees)",
+          "15-30 days before tour: 75% refund",
+          "7-14 days before tour: 50% refund",
+          "Less than 7 days: No refund"
+        ]
+      },
+      "responsibilities": {
+        "title": "User Responsibilities",
+        "content": "You agree to arrive on time, follow tour guide instructions, respect other travelers, and comply with local laws and regulations."
+      },
+      "liability": {
+        "title": "Limitation of Liability",
+        "content": "Voyago is not liable for personal injury, loss of property, or damages resulting from participation in tours, except as required by law."
+      },
+      "intellectual": {
+        "title": "Intellectual Property",
+        "content": "All content on our website, including text, images, and logos, is protected by copyright and trademark laws."
+      },
+      "changes": {
+        "title": "Changes to Terms",
+        "content": "We reserve the right to modify these terms at any time. Continued use of our services constitutes acceptance of updated terms."
+      }
+    },
+    "contactTitle": "Have Questions About Our Terms?",
+    "contactUs": "Contact Us"
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "description": "The page you are looking for does not exist or has been moved.",
+    "backHome": "Go Back Home"
+  },
+  "error": {
+    "title": "Something Went Wrong",
+    "description": "An unexpected error occurred. Please try again later.",
+    "retry": "Try Again",
+    "backHome": "Go Back Home"
+  },
+  "services": {
+    "pageTitle": "Our Services",
+    "pageSubtitle": "Discover the best ways to experience Tuscany with our comprehensive range of travel services.",
+    "learnMore": "Learn More",
+    "customTitle": "Need a Custom Experience?",
+    "customDesc": "We can create personalized tours and experiences tailored to your preferences.",
+    "getInTouch": "Get in Touch",
+    "backToServices": "Back to Services",
+    "backToAllServices": "Back to All Services",
+    "serviceNotFound": "Service Not Found",
+    "serviceNotFoundDesc": "The service you're looking for doesn't exist.",
+    "duration": "Duration",
+    "groupSize": "Group Size",
+    "price": "Price",
+    "location": "Location",
+    "aboutExperience": "About This Experience",
+    "highlights": "Tour Highlights",
+    "whatsIncluded": "What's Included",
+    "insiderTips": "💡 Insider Tips",
+    "readyToBook": "Ready to Book This Experience?",
+    "contactAvailability": "Contact us to check availability and customize your tour.",
+    "bookNow": "Book Now",
+    "items": {
+      "bikeRickshaw": {
+        "title": "Bike and Rickshaw Rental",
+        "desc": "Explore Lucca at your own pace with our quality bikes and traditional rickshaws.",
+        "longDesc": "Experience the charm of Lucca on two wheels or enjoy a relaxing rickshaw ride through the historic center.",
+        "features": ["Modern city bikes", "Electric bikes available", "Traditional rickshaws", "Helmets included", "City maps provided"],
+        "duration": "1 hour - Full day",
+        "groupSize": "Individual",
+        "price": "From €8/hour"
+      },
+      "guidedTours": {
+        "title": "Guided Tours of Lucca",
+        "desc": "Discover the secrets of Lucca with our expert local guides.",
+        "longDesc": "Join our knowledgeable guides for an unforgettable walking tour through Lucca's medieval streets.",
+        "features": ["Expert local guides", "Small groups", "Historical insights", "Photo opportunities", "Multiple languages"],
+        "duration": "2-3 hours",
+        "groupSize": "2-15 people",
+        "price": "From €25/person"
+      },
+      "bikeTour": {
+        "title": "Guided Bike Tour of Lucca",
+        "desc": "Cycle through Lucca's famous walls and hidden gems.",
+        "longDesc": "Combine the joy of cycling with expert guidance on this comprehensive bike tour.",
+        "features": ["Quality bikes included", "Expert guide", "Scenic routes", "Photo stops", "Water provided"],
+        "duration": "2.5 hours",
+        "groupSize": "4-12 people",
+        "price": "From €35/person"
+      },
+      "tuscanHills": {
+        "title": "Trip in the Tuscan Hills",
+        "desc": "Escape to the rolling hills of Tuscany for a day of beauty and wine.",
+        "longDesc": "Experience the breathtaking Tuscan countryside with wine tastings and authentic local cuisine.",
+        "features": ["Scenic drives", "Wine tasting", "Local lunch", "Small groups", "Air-conditioned transport"],
+        "duration": "Full day (8 hours)",
+        "groupSize": "6-15 people",
+        "price": "From €85/person"
+      },
+      "transportation": {
+        "title": "Transportation With Luxury Cars",
+        "desc": "Travel in style with our premium vehicle fleet.",
+        "longDesc": "Experience ultimate comfort with our luxury transportation services for any occasion.",
+        "features": ["Mercedes fleet", "Professional drivers", "Airport transfers", "Event transport", "24/7 availability"],
+        "duration": "Custom",
+        "groupSize": "1-7 people",
+        "price": "From €60/hour"
+      },
+      "wineTours": {
+        "title": "Wine Tours By Bus With Guide",
+        "desc": "Journey through Tuscany's finest vineyards and wineries.",
+        "longDesc": "Indulge in world-class wines while learning about Tuscan winemaking traditions.",
+        "features": ["Multiple wineries", "Expert sommelier", "Lunch included", "All tastings included", "Comfortable bus"],
+        "duration": "Full day (9 hours)",
+        "groupSize": "10-30 people",
+        "price": "From €95/person"
+      }
+    }
+  }
+}

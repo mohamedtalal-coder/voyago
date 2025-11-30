@@ -1,0 +1,279 @@
+.container {
+  max-width: 600px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin: 0;
+}
+
+.secure {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-success);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.required {
+  color: var(--color-error);
+}
+
+.hint {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  font-weight: 400;
+  margin-left: 0.25rem;
+}
+
+[dir="rtl"] .hint {
+  margin-left: 0;
+  margin-right: 0.25rem;
+}
+
+.inputWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  position: absolute;
+  left: 1rem;
+  color: var(--color-icon-muted);
+  pointer-events: none;
+  z-index: 1;
+}
+
+[dir="rtl"] .icon {
+  left: auto;
+  right: 1rem;
+}
+
+.cardInput {
+  padding-left: 3rem !important;
+}
+
+[dir="rtl"] .cardInput {
+  padding-left: 1rem !important;
+  padding-right: 3rem !important;
+}
+
+.inputWrapper .input {
+  width: 100%;
+}
+
+.cardType {
+  position: absolute;
+  right: 2.5rem;
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+}
+
+[dir="rtl"] .cardType {
+  right: auto;
+  left: 2.5rem;
+}
+
+.successIcon {
+  position: absolute;
+  right: 0.75rem;
+  color: var(--color-success);
+  pointer-events: none;
+}
+
+[dir="rtl"] .successIcon {
+  right: auto;
+  left: 0.75rem;
+}
+
+.input {
+  padding: 0.875rem 1rem;
+  padding-right: 2.5rem;
+  border: 1px solid var(--color-border);
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  color: var(--color-text);
+  transition: all 0.2s;
+  background-color: var(--color-input-bg);
+  width: 100%;
+}
+
+[dir="rtl"] .input {
+  padding-right: 1rem;
+  padding-left: 2.5rem;
+}
+
+.input::placeholder {
+  color: var(--color-placeholder);
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(26, 95, 122, 0.1);
+}
+
+.inputError {
+  border-color: var(--color-error) !important;
+  background-color: #fef2f2;
+}
+
+.inputError:focus {
+  border-color: var(--color-error) !important;
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.1);
+}
+
+.inputSuccess {
+  border-color: var(--color-success) !important;
+  background-color: #f0fdf4;
+}
+
+.inputSuccess:focus {
+  border-color: var(--color-success) !important;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+}
+
+.errorMessage {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  font-size: 0.8rem;
+  color: var(--color-error);
+  margin-top: 0.25rem;
+  animation: shake 0.3s ease-in-out;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.info {
+  display: flex;
+  gap: 0.75rem;
+  padding: 1rem;
+  background-color: #f0fdf4;
+  border: 1px solid var(--color-success);
+  border-radius: 0.5rem;
+  color: var(--color-success);
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.info p {
+  margin: 0;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.backButton {
+  padding: 1rem 2rem;
+  border: 1px solid var(--color-border);
+  background-color: var(--color-card-background);
+  color: var(--color-text-secondary);
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  flex: 1;
+}
+
+.backButton:hover:not(:disabled) {
+  background-color: var(--color-hover-bg);
+}
+
+.backButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.nextButton {
+  flex: 2;
+  padding: 1rem 2rem;
+  background-color: var(--color-primary);
+  color: var(--color-primary-text);
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.nextButton:hover:not(:disabled) {
+  background-color: var(--color-primary-dark);
+}
+
+.nextButton:disabled {
+  background-color: var(--color-button-disabled-bg);
+  cursor: not-allowed;
+}
+
+@media (max-width: 640px) {
+  .row {
+    grid-template-columns: 1fr;
+  }
+  
+  .buttons {
+    flex-direction: column;
+  }
+  
+  .header {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+  
+  .cardType {
+    display: none;
+  }
+}

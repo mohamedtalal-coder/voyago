@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+
+# After checkout (e.g., switching branches), check if deps need to be installed
+changed_files="$(git diff-tree -r --name-only --no-commit-id HEAD@{1} HEAD 2>/dev/null)"
+
+if [ -n "$changed_files" ]; then
+  echo "$changed_files" | grep --quiet "package.json" && npm install
+  echo "$changed_files" | grep --quiet "package-lock.json" && npm install
+fi

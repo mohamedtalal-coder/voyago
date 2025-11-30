@@ -1,0 +1,161 @@
+.mainContainer {
+  max-width: 1200px;
+}
+
+.mainImage {
+  height: 450px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.thumbnail {
+  width: 142px;
+  height: 100px;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+.thumbnailActive {
+  border: 3px solid var(--color-primary-accent);
+}
+
+.thumbnailInactive {
+  border: 1px solid var(--color-border);
+}
+
+.calendarBox {
+  width: 100%;
+  max-width: 250px;
+  max-height: 270px;
+  background: var(--color-card-background);
+  border-radius: 12px;
+  box-shadow: var(--shadow-card);
+  padding: 12px;
+}
+
+.calendarGrid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+}
+
+.calendarDay {
+  height: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calendarDayActive {
+  background: var(--color-primary-accent);
+  color: var(--color-primary-text);
+}
+
+.calendarDayInactive {
+  background: transparent;
+  color: var(--color-text);
+}
+
+.timeSelect {
+  width: 100%;
+  max-width: 350px;
+  height: 45px;
+  border-radius: 8px;
+  font-size: 15px;
+  background: var(--color-card-background);
+  color: var(--color-text);
+  border-color: var(--color-border);
+}
+
+.buyNowBtn {
+  width: 40%;
+  max-width: 300px;
+  background: var(--color-primary-accent);
+  border-radius: 30px;
+  padding: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-primary-text);
+}
+
+.detailsText {
+  line-height: 1.6;
+  color: var(--color-text-light);
+}
+
+.sectionTitle {
+  color: var(--color-text);
+}
+
+@media (max-width: 992px) {
+  .mainImage {
+    height: 380px;
+  }
+  .thumbnail {
+    width: 80px;
+    height: 60px;
+  }
+  .calendarBox {
+    max-width: 220px;
+  }
+  .buyNowBtn {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .mainContainer {
+    padding-top: 80px;
+  }
+  .mainImage {
+    height: 280px;
+    margin-top: 0;
+  }
+  .thumbnail {
+    width: 65px;
+    height: 48px;
+  }
+  .calendarBox {
+    max-width: 100%;
+  }
+  .buyNowBtn {
+    width: 60%;
+  }
+  .timeSelect {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .mainContainer {
+    padding-top: 70px;
+  }
+  .mainImage {
+    height: 220px;
+  }
+  .thumbnail {
+    width: 55px;
+    height: 42px;
+  }
+  .calendarGrid {
+    grid-template-columns: repeat(7, 1fr);
+    gap: 3px;
+  }
+  .calendarDay {
+    height: 28px;
+    font-size: 0.85rem;
+  }
+  .buyNowBtn {
+    width: 80%;
+    max-width: 250px;
+    font-size: 16px;
+    padding: 10px;
+  }
+  .detailsText {
+    font-size: 0.95rem;
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "pageTitle": "Tour Packages",
+  "servicesTitle": "Services",
+  "priceFrom": "from",
+  "readMore": "Read More",
+  "bookNow": "Book Now",
+  "details": "Details",
+  "group": "Group",
+  "duration": "Duration",
+  "area": "Area",
+  "guide": "Guide",
+  "guideIncluded": "Included",
+  "language": "Language",
+  "languagesList": "English, Italian",
+  "fees": "Fees",
+  "feesIncluded": "Included",
+  "defaultDetailsDescription": "Make sure to read all tour details before booking for an enjoyable experience.",
+  "selectDate": "Select a date",
+  "selectTime": "Select Time",
+  "detailsSectionTitle": "Details",
+  "areaLabel": "Area",
+  "guideLabel": "Guide",
+  "languageLabel": "Language",
+  "feesLabel": "Fees",
+  "hour": "hour",
+  "hours": "hours",
+  "day": "day",
+  "days": "days",
+  "lucca": "Lucca",
+  "tuscany": "Tuscany",
+  "florence": "Florence",
+  "pisa": "Pisa",
+  "siena": "Siena",
+  "tours": {
+    "luccaBike": {
+      "title": "Lucca Bike Tour",
+      "group": "Up to 10 people",
+      "shortDesc": "Discover the historic city of Lucca on two wheels with our expert local guides.",
+      "longDesc": "Experience the magic of Lucca on our guided bike tour! Cycle along the famous Renaissance walls, explore charming cobblestone streets, and discover hidden piazzas. Our knowledgeable guides will share fascinating stories about the city's rich history, from its Roman origins to its medieval glory. The tour includes stops at major landmarks like Piazza dell'Anfiteatro, the Guinigi Tower, and the beautiful Cathedral of San Martino. Perfect for all skill levels with comfortable bikes provided."
+    },
+    "wineTasting": {
+      "title": "Wine Tasting in Tuscany",
+      "group": "18+ only",
+      "shortDesc": "Savor the finest Tuscan wines at authentic local vineyards and wineries.",
+      "longDesc": "Indulge in an unforgettable wine experience in the heart of Tuscany! Visit three carefully selected wineries in the rolling hills surrounding Lucca. Learn about traditional winemaking techniques passed down through generations, tour ancient cellars, and taste a variety of exceptional wines including Chianti, Brunello, and local specialties. Each tasting is paired with regional delicacies like pecorino cheese, bruschetta, and olive oil. Our sommelier guide ensures an educational yet relaxed atmosphere."
+    },
+    "cinqueTerre": {
+      "title": "Cinque Terre Tour",
+      "group": "12 people",
+      "shortDesc": "Visit the stunning five colorful villages perched on the Italian Riviera cliffs.",
+      "longDesc": "Embark on a breathtaking journey to the UNESCO World Heritage site of Cinque Terre! This full-day tour takes you through all five picturesque villages: Monterosso, Vernazza, Corniglia, Manarola, and Riomaggiore. Travel by comfortable coach and scenic train, with plenty of time to explore each village's unique character, swim in crystal-clear waters, and enjoy fresh seafood at seaside restaurants. The dramatic coastal scenery and colorful houses clinging to steep cliffs will leave you speechless."
+    },
+    "siena": {
+      "title": "Siena and Surroundings",
+      "group": "15 people",
+      "shortDesc": "Explore medieval Siena and the charming towns of the Tuscan countryside.",
+      "longDesc": "Step back in time with our comprehensive tour of Siena and its beautiful surroundings! Start in the magnificent Piazza del Campo, one of Europe's greatest medieval squares, and visit the stunning Siena Cathedral with its intricate marble facade. Wander through narrow streets filled with artisan shops and historic buildings. The tour continues to nearby San Gimignano, famous for its medieval towers, and the hilltop town of Monteriggioni with its perfectly preserved walls. Includes a traditional Tuscan lunch."
+    },
+    "luccaHills": {
+      "title": "Tour of the Lucca Hills",
+      "group": "10 people",
+      "shortDesc": "Escape to the peaceful Tuscan hills for stunning views and authentic experiences.",
+      "longDesc": "Discover the serene beauty of the Lucchese hills on this intimate tour! Leave the city behind and venture into the lush countryside dotted with olive groves, vineyards, and historic villas. Visit a family-run olive oil producer to learn about traditional pressing methods and taste award-winning oils. Stop at a charming hilltop village for panoramic views of the valley below. The tour includes a farm-to-table lunch featuring locally sourced ingredients and homemade pasta prepared before your eyes."
+    },
+    "gardaland": {
+      "title": "Gardaland, Verona",
+      "group": "Family",
+      "shortDesc": "Fun-filled day at Italy's premier theme park with transport included.",
+      "longDesc": "Treat your family to an exciting adventure at Gardaland, Italy's most popular theme park! Our hassle-free package includes comfortable round-trip transportation from Lucca, skip-the-line entry tickets, and a full day to enjoy over 40 thrilling attractions. From heart-pounding roller coasters to gentle rides for little ones, there's something for everyone. On the return journey, we'll make a brief stop in romantic Verona to see Juliet's famous balcony. Perfect for families with children of all ages."
+    },
+    "pisaLucca": {
+      "title": "Pisa & Lucca",
+      "group": "12 people",
+      "shortDesc": "Combine two iconic Tuscan cities in one memorable day trip.",
+      "longDesc": "Experience the best of two remarkable Tuscan cities in a single day! Begin in Pisa at the iconic Piazza dei Miracoli, home to the world-famous Leaning Tower, the magnificent Cathedral, and the Baptistery. Learn the fascinating history of why the tower leans and capture that perfect photo! After lunch, explore the charming walled city of Lucca with its Renaissance walls, beautiful churches, and vibrant market squares. This tour offers the perfect introduction to Tuscany's artistic and architectural heritage."
+    },
+    "florence": {
+      "title": "Florence",
+      "group": "Tour guided",
+      "shortDesc": "Immerse yourself in the birthplace of the Renaissance and its artistic treasures.",
+      "longDesc": "Journey to Florence, the cradle of the Renaissance and one of the world's most beautiful cities! Our expert guide leads you through centuries of art and history, from the magnificent Duomo with Brunelleschi's iconic dome to the elegant Ponte Vecchio spanning the Arno River. Visit Piazza della Signoria, an open-air sculpture gallery, and walk past the Uffizi Gallery. Enjoy free time to shop for leather goods, explore hidden trattorias, or simply soak in the atmosphere of this extraordinary city."
+    }
+  },
+  "services": {
+    "bike": {
+      "title": "Bike and Rickshaw Rental",
+      "desc": "Rent any quality bicycle or rickshaw from us in minutes.",
+      "shortDesc": "Explore Lucca at your own pace with our premium bikes and traditional rickshaws.",
+      "longDesc": "Experience the freedom of exploring Lucca on two wheels! Our rental service offers a wide selection of quality bicycles including city bikes, mountain bikes, and electric bikes. For a unique experience, try our traditional rickshaws perfect for families or couples. All rentals include helmets, locks, and detailed city maps. Our central location near the main gate makes pickup and drop-off convenient. Hourly, half-day, and full-day rates available."
+    },
+    "guided": {
+      "title": "Guided Tours of Lucca",
+      "desc": "City tours accompanied by professional guides.",
+      "shortDesc": "Discover Lucca's hidden gems with our passionate local guides.",
+      "longDesc": "Let our expert local guides reveal the secrets of Lucca! Our walking tours cover the city's fascinating history, from its Roman amphitheater transformed into a unique oval piazza, to the medieval towers and Renaissance walls. Learn about famous residents, architectural marvels, and local traditions. Tours are available in multiple languages and can be customized for special interests like art, food, or architecture. Private tours for groups can also be arranged."
+    },
+    "hills": {
+      "title": "Trips in the Tuscan Hills",
+      "desc": "Enjoy a breathtaking experience in the hills.",
+      "shortDesc": "Escape to the rolling Tuscan hills for panoramic views and authentic countryside experiences.",
+      "longDesc": "Venture beyond Lucca's walls into the stunning Tuscan countryside! Our hill trips take you through picturesque landscapes of olive groves, vineyards, and cypress-lined roads. Visit charming hilltop villages frozen in time, taste local products at family farms, and enjoy spectacular panoramic views. Choose from half-day excursions or full-day adventures that include traditional Tuscan meals at agriturismos. Transportation in comfortable air-conditioned vehicles."
+    },
+    "coach": {
+      "title": "Coach Trip Packages",
+      "desc": "Group coach trips including multiple destinations.",
+      "shortDesc": "Join our organized coach tours to famous destinations across Tuscany and beyond.",
+      "longDesc": "Our coach trip packages offer the most convenient way to explore multiple destinations in a single day! Travel in comfort on modern, air-conditioned coaches with experienced drivers and knowledgeable guides. Popular routes include Florence, Pisa, Cinque Terre, Siena, and the Chianti wine region. All packages include entrance fees where applicable, guided tours at each destination, and plenty of free time for exploration. Perfect for those who want a hassle-free sightseeing experience."
+    },
+    "luxury": {
+      "title": "Transportation With Luxury Cars",
+      "desc": "Luxury vehicles for private trips and events.",
+      "shortDesc": "Travel in style with our fleet of premium Mercedes and luxury vehicles.",
+      "longDesc": "Experience Tuscany in ultimate comfort with our luxury transportation service! Our fleet of Mercedes sedans, SUVs, and minivans ensures a first-class travel experience. Professional, English-speaking chauffeurs provide personalized service for airport transfers, special occasions, business trips, or custom sightseeing itineraries. Vehicles are equipped with Wi-Fi, refreshments, and all modern amenities. Available 24/7 with flexible booking options."
+    },
+    "wine": {
+      "title": "Wine Tours by Bus With Guide",
+      "desc": "Taste regional wines with certified guides.",
+      "shortDesc": "Journey through Tuscany's wine country with expert sommeliers and oenologists.",
+      "longDesc": "Embark on a wine lover's dream tour through Tuscany's most prestigious wine regions! Our expert wine guides lead you to carefully selected wineries in Chianti, Montalcino, and Montepulciano. Learn about grape varieties, terroir, and traditional winemaking while tasting exceptional Sangiovese, Brunello, and Super Tuscans. Each tour includes visits to multiple cellars, gourmet lunch pairings, and the opportunity to purchase wines directly from producers. Comfortable coach transportation included."
+    }
+  }}

@@ -1,0 +1,140 @@
+.organizations-banner-container {
+    max-width: 100%;
+    margin: 60px auto;
+    font-family: Arial, sans-serif;
+    position: relative;
+    padding-top: 100px;
+    direction: ltr;
+}
+
+html[lang="ar"] .organizations-banner-container {
+    direction: rtl;
+}
+
+.organizations-banner-wrapper {
+    display: flex;
+    position: relative;
+    background-color: var(--color-organizations-banner);
+    overflow: hidden;
+    min-height: 380px;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+html[lang="ar"] .content-card {
+    text-align: right;
+}
+
+.content-card {
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(5px);
+    border-radius: 12px;
+    padding: 30px 40px;
+    margin-left: 10%;
+    max-width: 450px;
+    color: var(--color-text);
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.card-title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    line-height: 1.2;
+    color: var(--color-dark-blue);
+}
+
+.card-description {
+    font-size: 14px;
+    color: var(--color-text);
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: var(--color-primary);
+    color: var(--color-primary-text);
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.contact-button:hover {
+    background: var(--color-primary-accent-hover);
+    transform: translateY(-1px);
+    color: var(--color-white);
+}
+
+.traveler-image {
+    position: absolute;
+    right: calc(150px - 5%);
+    bottom: 0px;
+    height: 480px;
+    width: auto;
+    object-fit: cover;
+    z-index: 10;
+}
+
+@media (max-width: 1200px) {
+    .content-card {
+        margin-left: 5%;
+        max-width: 400px;
+    }
+
+    .traveler-image {
+        right: 0px;
+        height: 420px;
+    }
+}
+
+@media (max-width: 992px) {
+    .organizations-banner-container {
+        padding-top: 0;
+    }
+
+    .organizations-banner-wrapper {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        min-height: 550px;
+        padding-top: 250px;
+    }
+
+    html[lang="ar"] .organizations-banner-wrapper {
+        text-align: right;
+    }
+
+    .content-card {
+        margin: 20px auto;
+        max-width: 90%;
+        padding: 25px 30px;
+        text-align: center;
+    }
+
+    html[lang="ar"] .content-card {
+        text-align: right;
+    }
+
+    .card-title {
+        font-size: 26px;
+    }
+
+    .traveler-image {
+        position: absolute;
+        bottom: auto;
+        top: 0;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        max-width: 250px;
+        height: 250px;
+        object-fit: contain;
+        transform: none;
+    }
+}

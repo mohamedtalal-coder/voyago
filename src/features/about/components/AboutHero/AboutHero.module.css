@@ -1,0 +1,124 @@
+/* ==========================
+   Hero Section Container
+========================== */
+.heroSection {
+  position: relative;
+  background: url('../../../../assets/images/About/hero.jpg') no-repeat center center/cover;
+  height: 100vh;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+/* Overlay to darken the background for better text visibility */
+.heroOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+}
+
+/* Content wrapper to keep everything above overlay */
+.heroContent {
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Hero Title */
+.scriptTitle {
+  font-family: 'Podcast', cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4rem;
+  line-height: 1.1;
+  text-align: center;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+/* Hero Description Paragraph */
+.heroText {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  text-align: center;
+  margin-bottom: 2rem;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+
+/* Hero Button Styling */
+.heroBtn {
+  margin-top: 1rem;
+  color: var(--color-primary-text);
+  border: 1px solid var(--color-primary-text);
+  transition: all 0.3s ease;
+}
+
+/* Hover effect for button */
+.heroBtn:hover {
+  background-color: var(--color-primary-text); 
+  color: var(--color-primary);          
+  border-color: var(--color-primary-text);       
+  transform: translateY(-2px); 
+  box-shadow: var(--shadow-hover); 
+}
+
+/* ==========================
+   Responsive Styles
+========================== */
+
+/* Large tablets / small desktops */
+@media (max-width: 992px) {
+  .scriptTitle {
+    font-size: 3rem;
+  }
+  
+  .heroText {
+    font-size: 1.1rem;
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .heroSection {
+    min-height: 500px;
+  }
+  
+  .scriptTitle {
+    font-size: 2.5rem;
+  }
+  
+  .heroText {
+    font-size: 1rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .heroSection {
+    min-height: 400px;
+  }
+  
+  .scriptTitle {
+    font-size: 2rem;
+  }
+  
+  .heroText {
+    font-size: 0.9rem;
+  }
+  
+  .heroContent {
+    padding: 15px;
+  }
+}

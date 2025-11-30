@@ -1,0 +1,431 @@
+/* --- Main Navbar Container --- */
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 18px 5%;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+/* Dark mode glassmorphism */
+:root[data-theme="dark"] .navbar,
+html[data-theme="dark"] .navbar {
+  background: rgba(26, 26, 26, 0.7);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* --- Logo Section --- */
+.logoContainer {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 12px;
+  margin-left: 120px;
+  transition: transform 0.2s ease;
+}
+
+.logoContainer:hover {
+  transform: scale(1.02);
+}
+
+.logoIcon {
+  height: 60px;
+  width: auto;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+.logoText {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--color-primary-text);
+  text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.4);
+  letter-spacing: -0.01em;
+}
+
+/* --- Navbar Toggler (Hamburger) --- */
+.navbarToggler {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1.5px solid rgba(255, 255, 255, 0.3);
+  color: var(--color-text);
+  border-radius: 6px;
+  padding: 8px 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+  z-index: 1001;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: all 0.2s ease;
+}
+
+.navbarToggler:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+/* --- Collapsible Menu Wrapper --- */
+.navCollapse {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+/* --- Navigation Links --- */
+.navLinks {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 35px;
+  align-items: center;
+  position: relative;
+}
+
+/* Base NavLink Style */
+.navLink {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--color-text);
+  font-weight: 500;
+  font-size: 1.05rem;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 8px 0;
+  position: relative;
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+  letter-spacing: 0.01em;
+}
+
+.navLink:hover {
+  transform: translateY(-1px);
+  color: var(--color-primary-accent);
+  text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+/* --- Active Link Style --- */
+.active {
+  color: var(--color-primary-accent);
+  font-weight: 600;
+}
+
+/* Admin link special styling */
+.adminLink {
+  color: #8b5cf6 !important;
+}
+
+.adminLink:hover {
+  color: #7c3aed !important;
+}
+
+.underline {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  height: 2.5px;
+  background-color: var(--color-primary-accent);
+  border-radius: 2px;
+  box-shadow: 0 2px 6px rgba(10, 45, 79, 0.4);
+}
+
+/* Dark mode underline shadow */
+:root[data-theme="dark"] .underline,
+html[data-theme="dark"] .underline {
+  box-shadow: 0 2px 8px rgba(91, 163, 255, 0.5);
+}
+
+/* --- Right (Auth) Section --- */
+.navRight {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.langContainer {
+  position: relative;
+}
+
+.langSwitcher {
+  color: var(--color-text);
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: none;
+  padding: 6px 10px;
+  font-family: inherit;
+  font-size: 1.05rem;
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.langSwitcher:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+.langSwitcher span {
+  font-size: 0.7rem;
+}
+
+.langDropdown {
+  position: absolute;
+  top: 140%;
+  right: 0;
+  width: 150px;
+  background: var(--color-card-background);
+  border-radius: 8px;
+  box-shadow: var(--shadow-dropdown);
+  padding: 8px;
+  z-index: 1001;
+  overflow: hidden;
+}
+
+.langOption {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 10px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: var(--color-text);
+  font-weight: 500;
+}
+.langOption:hover {
+  background-color: var(--color-hover-light);
+}
+
+.loginLink {
+  text-decoration: none;
+  color: var(--color-text);
+  font-weight: 500;
+  transition: all 0.25s ease;
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+  font-size: 1.05rem;
+  padding: 6px 0;
+}
+
+.loginLink:hover {
+  color: var(--color-primary-accent);
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.signupBtn {
+  background-color: var(--color-primary-accent);
+  color: var(--color-primary-text);
+  border: none;
+  padding: 8px 32px;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1.05rem;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 8px rgba(10, 45, 79, 0.3);
+  letter-spacing: 0.01em;
+}
+
+.signupBtn:hover {
+  background-color: var(--color-primary-accent-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(10, 45, 79, 0.4);
+}
+
+.signupBtn:active {
+  background-color: var(--color-primary-accent-active);
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(10, 45, 79, 0.3);
+}
+
+/* --- Media Queries --- */
+@media (min-width: 992px) {
+  .navCollapse {
+    display: contents;
+  }
+  .navLinks {
+    flex-direction: row;
+    gap: 35px;
+    width: auto;
+    align-items: center;
+  }
+  .navLink {
+    font-size: 1rem;
+  }
+  .navRight {
+    flex-direction: row;
+    gap: 25px;
+    width: auto;
+    margin-top: 0;
+    padding-top: 0;
+    border-top: none;
+  }
+}
+
+@media (max-width: 1400px) {
+  .logoContainer {
+    margin-left: 60px;
+  }
+}
+
+@media (max-width: 1160px) {
+  .logoContainer {
+    margin-left: 40px;
+  }
+  .logoText {
+    font-size: 1rem;
+  }
+  .navLinks {
+    gap: 20px;
+  }
+  .navLink {
+    font-size: 0.85rem;
+  }
+  .langSwitcher {
+    font-size: 0.85rem;
+  }
+  .loginLink {
+    font-size: 0.85rem;
+  }
+  .signupBtn {
+    padding: 4px 22px;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar {
+    padding: 16px 5%;
+  }
+  
+  .logoContainer {
+    margin-left: 0;
+  }
+  
+  .logoIcon {
+    height: 40px;
+  }
+  
+  .navbarToggler {
+    display: block;
+  }
+  
+  .navCollapse {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-nav-background);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    padding: 100px 5% 40px;
+    z-index: 999;
+    overflow-y: auto;
+  }
+
+  .navLinks {
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    align-items: flex-start;
+    position: relative;
+  }
+  
+  .navLink {
+    font-size: 1.25rem;
+    color: var(--color-primary-accent);
+    text-shadow: none;
+  }
+  
+  .navLink:hover {
+    color: var(--color-primary-accent-hover);
+    transform: translateX(4px);
+  }
+  
+  .active {
+    color: var(--color-primary-accent);
+    font-weight: 600;
+  }
+  
+  .underline {
+    background-color: var(--color-primary-accent);
+    box-shadow: 0 2px 6px rgba(10, 45, 79, 0.4);
+  }
+  
+  :root[data-theme="dark"] .underline,
+  html[data-theme="dark"] .underline {
+    box-shadow: 0 2px 8px rgba(91, 163, 255, 0.5);
+  }
+  
+  .navRight {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    align-items: flex-start;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid var(--color-border);
+  }
+  
+  .langDropdown {
+    left: 0;
+    right: auto;
+    position: relative;
+    top: 8px;
+    width: 100%;
+    box-shadow: none;
+    background: var(--color-hover-light);
+  }
+  
+  [dir="rtl"] .langDropdown {
+    right: 0px;
+    left: auto;
+  }
+  
+  .langSwitcher {
+    color: var(--color-text);
+    text-shadow: none;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px 12px;
+  }
+  
+  .loginLink {
+    color: var(--color-text);
+    text-shadow: none;
+    font-size: 1.2rem;
+  }
+  
+  .loginLink:hover {
+    color: var(--color-text);
+    transform: translateX(4px);
+  }
+  
+  .logoText {
+    color: var(--color-text);
+    text-shadow: none;
+  }
+  
+  .signupBtn {
+    width: 100%;
+    padding: 12px 32px;
+    font-size: 1.1rem;
+  }
+}

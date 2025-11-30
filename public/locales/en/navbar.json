@@ -1,0 +1,16 @@
+{
+  "home": "Home",
+  "about": "About Us",
+  "packages": "Tour Packages",
+  "contact": "Contact Us",
+  "login": "Login",
+  "signup": "Sign Up",
+  "langEn": "English (EN)",
+  "langAr": "Arabic (AR)",
+  "userMenu": {
+    "myCart": "My Cart",
+    "payments": "Payments",
+    "projects": "Projects",
+    "logout": "Logout"
+  }
+}

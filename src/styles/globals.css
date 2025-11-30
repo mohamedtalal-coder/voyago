@@ -1,0 +1,396 @@
+/* ============================================
+   VOYAGO - Global CSS Variables & Styles
+   Light & Dark Theme Support
+   ============================================ */
+
+/* ============================================
+   1. LIGHT MODE (Default)
+   ============================================ */
+:root,
+html[data-theme="light"] {
+  /* --- Primary Brand Colors --- */
+  --color-primary: #0b3d5e;
+  --color-primary-dark: #082d47;
+  --color-primary-light: #0d4d75;
+  --color-primary-accent: #0a2d4f;
+  --color-primary-accent-hover: #0b498d;
+  --color-primary-accent-active: #0e406e;
+
+  /* --- Background Colors --- */
+  --color-background: #ffffff;
+  --color-background-light: #f8f8f8;
+  --color-background-secondary: #f5f5f5;
+  --color-background-alt: #fafafa;
+
+  /* --- Surface & Card Colors --- */
+  --color-card-background: #ffffff;
+  --color-surface: #ffffff;
+  --color-white: #ffffff;
+  --color-white-box: #ffffff;
+
+  /* --- Text Colors --- */
+  --color-text: #333333;
+  --color-text-light: #555555;
+  --color-text-muted: #888888;
+  --color-text-secondary: #666666;
+  --color-meta-text: #777777;
+  --color-description-text: #666666;
+  --color-primary-text: #ffffff;
+  --color-black: #000000;
+  --color-dark-blue: #0b3d5e;
+  --color-dark-blue-hover: #0a5280;
+
+  /* --- Border Colors --- */
+  --color-border: #e0e0e0;
+  --color-border-light: #eeeeee;
+  --color-dropdown-border: #f0f0f0;
+
+  /* --- Icon Colors --- */
+  --color-icon-muted: #999999;
+
+  /* --- Button Colors --- */
+  --color-button-disabled-bg: #cccccc;
+  --color-button-disabled-border: #cccccc;
+  --color-button-disabled-text: #666666;
+
+  /* --- Shadows --- */
+  --shadow-main: 0 4px 10px rgba(0, 0, 0, 0.1);
+  --shadow-card: 0 4px 15px rgba(0, 0, 0, 0.08);
+  --shadow-dropdown: 0 10px 30px rgba(0, 0, 0, 0.15);
+  --shadow-hover: 0 8px 25px rgba(0, 0, 0, 0.12);
+
+  /* --- Hover States --- */
+  --color-hover-light: rgba(0, 0, 0, 0.04);
+  --color-hover-bg: #f7f7f7;
+
+  /* --- Transparent / Glass Effects --- */
+  --color-transparent-frame: rgba(255, 255, 255, 0.2);
+  --color-glass-bg: rgba(255, 255, 255, 0.9);
+  --color-glass-border: rgba(255, 255, 255, 0.6);
+
+  /* --- Navbar --- */
+  --color-nav-background: rgba(255, 255, 255, 0.95);
+  --color-nav-text: #333333;
+
+  /* --- Footer --- */
+  --footer-bg: #212529;
+  --footer-text: #ffffff;
+  --muted: rgba(255, 255, 255, 0.6);
+  --accent: #5ba3ff;
+
+  /* --- Forms --- */
+  --color-input-bg: #ffffff;
+  --color-input-border: #e2e8f0;
+  --color-input-focus: #183b56;
+  --color-placeholder: #a0aec0;
+
+  /* --- Special Sections --- */
+  --color-booking-section-bg: #d6e4fc;
+  --color-organizations-banner: #8fa0ac;
+
+  /* --- Status Colors --- */
+  --color-success: #28a745;
+  --color-error: #dc3545;
+  --color-warning: #ffc107;
+  --color-info: #17a2b8;
+}
+
+/* ============================================
+   2. DARK MODE
+   ============================================ */
+html[data-theme="dark"] {
+  /* --- Primary Brand Colors --- */
+  --color-primary: #5ba3ff;
+  --color-primary-dark: #4a8fe6;
+  --color-primary-light: #7bb8ff;
+  --color-primary-accent: #5ba3ff;
+  --color-primary-accent-hover: #7bb8ff;
+  --color-primary-accent-active: #4a8fe6;
+
+  /* --- Background Colors --- */
+  --color-background: #121212;
+  --color-background-light: #1a1a1a;
+  --color-background-secondary: #1e1e1e;
+  --color-background-alt: #252525;
+
+  /* --- Surface & Card Colors --- */
+  --color-card-background: #1e1e1e;
+  --color-surface: #1e1e1e;
+  --color-white: #1e1e1e;
+  --color-white-box: #252525;
+
+  /* --- Text Colors --- */
+  --color-text: #e0e0e0;
+  --color-text-light: #b0b0b0;
+  --color-text-muted: #888888;
+  --color-text-secondary: #a0a0a0;
+  --color-meta-text: #999999;
+  --color-description-text: #b0b0b0;
+  --color-primary-text: #ffffff;
+  --color-black: #e0e0e0;
+  --color-dark-blue: #5ba3ff;
+  --color-dark-blue-hover: #7bb8ff;
+
+  /* --- Border Colors --- */
+  --color-border: #333333;
+  --color-border-light: #404040;
+  --color-dropdown-border: #333333;
+
+  /* --- Icon Colors --- */
+  --color-icon-muted: #777777;
+
+  /* --- Button Colors --- */
+  --color-button-disabled-bg: #404040;
+  --color-button-disabled-border: #404040;
+  --color-button-disabled-text: #888888;
+
+  /* --- Shadows --- */
+  --shadow-main: 0 4px 10px rgba(0, 0, 0, 0.4);
+  --shadow-card: 0 4px 15px rgba(0, 0, 0, 0.3);
+  --shadow-dropdown: 0 10px 30px rgba(0, 0, 0, 0.5);
+  --shadow-hover: 0 8px 25px rgba(0, 0, 0, 0.4);
+
+  /* --- Hover States --- */
+  --color-hover-light: rgba(255, 255, 255, 0.08);
+  --color-hover-bg: #2a2a2a;
+
+  /* --- Transparent / Glass Effects --- */
+  --color-transparent-frame: rgba(30, 30, 30, 0.6);
+  --color-glass-bg: rgba(30, 30, 30, 0.9);
+  --color-glass-border: rgba(60, 60, 60, 0.6);
+
+  /* --- Navbar --- */
+  --color-nav-background: rgba(26, 26, 26, 0.95);
+  --color-nav-text: #e0e0e0;
+
+  /* --- Footer --- */
+  --footer-bg: #000000;
+  --footer-text: #e0e0e0;
+  --muted: rgba(255, 255, 255, 0.5);
+  --accent: #5ba3ff;
+
+  /* --- Forms --- */
+  --color-input-bg: #252525;
+  --color-input-border: #404040;
+  --color-input-focus: #5ba3ff;
+  --color-placeholder: #666666;
+
+  /* --- Special Sections --- */
+  --color-booking-section-bg: #1a2533;
+  --color-organizations-banner: #171d24;
+
+  /* --- Status Colors --- */
+  --color-success: #4caf50;
+  --color-error: #f44336;
+  --color-warning: #ff9800;
+  --color-info: #2196f3;
+}
+
+/* ============================================
+   3. GLOBAL RESET & BASE STYLES
+   ============================================ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: "Open Sans", "Inter", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+  font-size: 16px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* ============================================
+   4. RESPONSIVE TYPOGRAPHY
+   ============================================ */
+@media (max-width: 1200px) {
+  body {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  body {
+    font-size: 13px;
+  }
+}
+
+/* ============================================
+   5. CONTAINER UTILITIES
+   ============================================ */
+@media (max-width: 768px) {
+  .container,
+  .container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+/* ============================================
+   6. IMAGE DEFAULTS
+   ============================================ */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ============================================
+   7. LINK DEFAULTS
+   ============================================ */
+a {
+  color: var(--color-primary-accent);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--color-primary-accent-hover);
+}
+
+/* ============================================
+   8. BUTTON DEFAULTS
+   ============================================ */
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* ============================================
+   10. SELECTION STYLING
+   ============================================ */
+::selection {
+  background-color: var(--color-primary-accent);
+  color: var(--color-primary-text);
+}
+
+/* ============================================
+   11. FOCUS VISIBLE (Accessibility)
+   ============================================ */
+:focus-visible {
+  outline: 2px solid var(--color-primary-accent);
+  outline-offset: 2px;
+}
+
+/* ============================================
+   12. FORM ELEMENTS DARK MODE SUPPORT
+   ============================================ */
+html[data-theme="dark"] input,
+html[data-theme="dark"] textarea,
+html[data-theme="dark"] select {
+  background-color: var(--color-input-bg);
+  border-color: var(--color-input-border);
+  color: var(--color-text);
+}
+
+html[data-theme="dark"] input::placeholder,
+html[data-theme="dark"] textarea::placeholder {
+  color: var(--color-placeholder);
+}
+
+/* ============================================
+   13. DATE & TIME INPUT STYLING
+   ============================================ */
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: var(--color-input-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  color: var(--color-text);
+  min-height: 48px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+input[type="date"]:focus,
+input[type="time"]:focus,
+input[type="datetime-local"]:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(11, 61, 94, 0.15);
+}
+
+/* Calendar/Clock picker icon */
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator,
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+  background-color: var(--color-primary);
+  padding: 6px;
+  border-radius: 4px;
+  cursor: pointer;
+  filter: invert(1);
+  opacity: 0.85;
+  transition: all 0.2s ease;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator:hover,
+input[type="time"]::-webkit-calendar-picker-indicator:hover,
+input[type="datetime-local"]::-webkit-calendar-picker-indicator:hover {
+  opacity: 1;
+  background-color: var(--color-primary-accent-hover);
+  transform: scale(1.05);
+}
+
+/* Dark mode for date/time inputs */
+html[data-theme="dark"] input[type="date"],
+html[data-theme="dark"] input[type="time"],
+html[data-theme="dark"] input[type="datetime-local"] {
+  color-scheme: dark;
+}
+
+html[data-theme="dark"] input[type="date"]::-webkit-calendar-picker-indicator,
+html[data-theme="dark"] input[type="time"]::-webkit-calendar-picker-indicator,
+html[data-theme="dark"]
+  input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+  filter: invert(0);
+  background-color: var(--color-primary);
+}
+
+/* Firefox date/time input styling */
+input[type="date"]::-moz-calendar-picker-indicator,
+input[type="time"]::-moz-calendar-picker-indicator {
+  background-color: var(--color-primary);
+}
+
+/* ============================================
+   14. CARD/MODAL DARK MODE SUPPORT
+   ============================================ */
+html[data-theme="dark"] .modal-content,
+html[data-theme="dark"] .card {
+  background-color: var(--color-card-background);
+  border-color: var(--color-border);
+}

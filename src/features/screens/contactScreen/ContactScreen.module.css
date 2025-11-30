@@ -1,0 +1,42 @@
+/* Background Map Container */
+.mapContainer {
+  position: relative;
+  width: 100%;
+  min-height: 400px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Gradient Overlay */
+.gradientOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.2), transparent);
+}
+
+/* Marker Wrapper */
+.markerWrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Marker Image */
+.markerImage {
+  width: 69px;
+  height: 93px;
+  transition: transform 0.3s ease;
+  z-index: 2;
+}
+
+.markerImage:hover {
+  transform: scale(1.1);
+}

@@ -1,0 +1,17 @@
+{
+  "title": "What Our Customers Say",
+  "addReview": "Add Review",
+  "noReviews": "No reviews yet. Be the first to share your experience!",
+  "writeReview": "Write a Review",
+  "reviewSubmitted": "Thank you! Your review has been submitted and is pending approval.",
+  "yourName": "Your Name",
+  "enterName": "Enter your name",
+  "rating": "Rating",
+  "yourReview": "Your Review",
+  "writeYourReview": "Share your experience with us...",
+  "submitReview": "Submit Review",
+  "submitting": "Submitting...",
+  "loadingReviews": "Loading reviews...",
+  "fillAllFields": "Please fill in all fields",
+  "submitError": "Failed to submit review"
+}

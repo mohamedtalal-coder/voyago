@@ -1,0 +1,46 @@
+{
+  "name": "voyago",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "prepare": "husky",
+    "test": "echo \"No tests configured\" && exit 0"
+  },
+  "dependencies": {
+    "axios": "^1.13.2",
+    "bootstrap": "^5.3.8",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.23.24",
+    "i18next": "^25.6.2",
+    "i18next-browser-languagedetector": "^8.2.0",
+    "i18next-http-backend": "^3.0.2",
+    "lucide-react": "^0.554.0",
+    "react": "^19.2.0",
+    "react-bootstrap": "^2.10.10",
+    "react-datepicker": "^8.10.0",
+    "react-dom": "^19.2.0",
+    "react-i18next": "^16.3.1",
+    "react-icons": "^5.5.0",
+    "react-router-dom": "^7.9.5",
+    "sonner": "^2.0.7",
+    "zustand": "^5.0.8"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "@vitejs/plugin-react": "^5.1.0",
+    "eslint": "^9.39.1",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.24",
+    "globals": "^16.5.0",
+    "husky": "^9.1.7",
+    "sharp": "^0.34.5",
+    "terser": "^5.44.1",
+    "vite": "^7.2.2"
+  }
+}

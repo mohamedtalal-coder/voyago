@@ -1,0 +1,112 @@
+{
+  "title": "احجز خدماتنا",
+  "subtitle": "اختر من مجموعتنا المميزة من الخدمات لمغامرتك",
+  "form": {
+    "name": "الاسم واللقب",
+    "namePlaceholder": "أدخل اسمك ولقبك",
+    "email": "البريد الإلكتروني",
+    "emailPlaceholder": "أدخل بريدك الإلكتروني",
+    "phone": "رقم الهاتف",
+    "phonePlaceholder": "أدخل رقم هاتفك",
+    "service": "نوع الخدمة",
+    "selectService": "اختر نوع الخدمة",
+    "date": "التاريخ",
+    "datePlaceholder": "اختر التاريخ",
+    "time": "الوقت",
+    "timePlaceholder": "اختر الوقت",
+    "button": "احجز الآن",
+    "bookNowBike": "احجز دراجة الآن",
+    "pickupDate": "تاريخ الاستلام",
+    "pickupTime": "وقت الاستلام",
+    "returnDate": "تاريخ الإرجاع",
+    "pickupLocation": "موقع الاستلام",
+    "returnLocation": "موقع الإرجاع",
+    "bikeType": "نوع الدراجة",
+    "quantity": "عدد الدراجات",
+    "accessories": "الملحقات",
+    "specialRequests": "طلبات خاصة",
+    "termsAccept": "أوافق على الشروط والأحكام"
+  },
+  "validation": {
+    "serviceRequired": "يرجى اختيار خدمة",
+    "nameRequired": "الاسم مطلوب",
+    "nameMin": "يجب أن يكون الاسم حرفين على الأقل",
+    "emailRequired": "البريد الإلكتروني مطلوب",
+    "emailInvalid": "يرجى إدخال بريد إلكتروني صحيح",
+    "phoneRequired": "رقم الهاتف مطلوب",
+    "phoneInvalid": "يرجى إدخال رقم هاتف صحيح",
+    "dateRequired": "يرجى اختيار التاريخ",
+    "timeRequired": "يرجى اختيار الوقت"
+  },
+  "bikeTypes": {
+    "city": "دراجة المدينة",
+    "mountain": "دراجة جبلية",
+    "electric": "دراجة كهربائية",
+    "road": "دراجة طريق",
+    "hybrid": "دراجة هجينة",
+    "tandem": "دراجة ثنائية"
+  },
+  "tourTypes": {
+    "walking": "جولة سيرًا على الأقدام",
+    "bike": "جولة بالدراجة",
+    "bus": "جولة بالحافلة",
+    "private": "جولة خاصة"
+  },
+  "hillTypes": {
+    "standard": "جولة قياسية",
+    "premium": "تجربة مميزة",
+    "private": "رحلة خاصة"
+  },
+  "transportTypes": {
+    "shuttle": "حافلة نقل",
+    "minibus": "حافلة صغيرة",
+    "coach": "حافلة كبيرة"
+  },
+  "carTypes": {
+    "sedan": "سيدان فاخرة",
+    "suv": "سيارة دفع رباعي فاخرة",
+    "limousine": "ليموزين"
+  },
+  "wineTypes": {
+    "halfDay": "جولة نصف يوم",
+    "fullDay": "جولة يوم كامل",
+    "premium": "تذوق مميز"
+  },
+  "accessories": {
+    "helmet": "خوذة",
+    "lock": "قفل الدراجة",
+    "basket": "سلة",
+    "childSeat": "مقعد أطفال",
+    "gps": "جهاز GPS",
+    "repairKit": "طقم إصلاح"
+  },
+  "pricing": {
+    "hourly": "السعر بالساعة",
+    "daily": "السعر اليومي",
+    "weekly": "السعر الأسبوعي",
+    "deposit": "تأمين مسترد",
+    "total": "السعر الإجمالي"
+  },
+  "locations": {
+    "mainOffice": "المكتب الرئيسي - وسط المدينة",
+    "trainStation": "محطة القطار",
+    "airport": "المطار",
+    "hotel": "توصيل للفندق"
+  },
+  "messages": {
+    "success": "تم حجز دراجتك بنجاح!",
+    "error": "حدث خطأ أثناء معالجة حجزك. يرجى المحاولة مرة أخرى.",
+    "confirmation": "تم إرسال رسالة تأكيد إلى بريدك الإلكتروني.",
+    "availability": "جاري التحقق من التوفر...",
+    "notAvailable": "عذراً، هذه الدراجة غير متاحة للتواريخ المحددة."
+  },
+  "summary": {
+    "title": "ملخص الحجز",
+    "duration": "مدة الإيجار",
+    "selectedBike": "الدراجة المختارة",
+    "selectedAccessories": "الملحقات المختارة",
+    "subtotal": "المجموع الفرعي",
+    "taxes": "الضرائب والرسوم",
+    "grandTotal": "المجموع الكلي"
+  }
+}

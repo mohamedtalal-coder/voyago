@@ -1,0 +1,53 @@
+{
+  "title": "Search Results",
+  "searchPlaceholder": "Search tours, destinations...",
+  "filters": "Filters",
+  "sortBy": "Sort By",
+  "priceRange": "Price Range",
+  "duration": "Duration",
+  "category": "Category",
+  "rating": "Rating",
+  "clearFilters": "Clear Filters",
+  "applyFilters": "Apply Filters",
+  "resultsFound": "{{count}} results found",
+  "noResults": "No results found",
+  "noResultsMessage": "Try adjusting your search or filters",
+  "sortOptions": {
+    "recommended": "Recommended",
+    "priceLow": "Price: Low to High",
+    "priceHigh": "Price: High to Low",
+    "rating": "Highest Rated",
+    "newest": "Newest"
+  },
+  "categories": {
+    "all": "All Categories",
+    "tours": "Tours",
+    "activities": "Activities",
+    "transportation": "Transportation",
+    "packages": "Packages"
+  },
+  "durationOptions": {
+    "any": "Any Duration",
+    "halfDay": "Half Day",
+    "fullDay": "Full Day",
+    "multiDay": "Multi-Day"
+  },
+  "date": "Date",
+  "time": "Time",
+  "flexible": "Flexible",
+  "transportation": "Transportation",
+  "included": "Included",
+  "perPerson": "person",
+  "viewTour": "View Tour",
+  "activeFilters": "Your search criteria",
+  "clearAll": "Clear All",
+  "tour": "Tour",
+  "min": "Min",
+  "max": "Max",
+  "from": "from",
+  "anyRating": "Any Rating",
+  "rating45": "4.5+ Stars",
+  "rating4": "4+ Stars",
+  "rating35": "3.5+ Stars",
+  "bus": "Bus"
+}

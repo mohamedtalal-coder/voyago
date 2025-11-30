@@ -1,0 +1,96 @@
+.registerForm {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  width: 100%;
+  max-width: 360px;
+  margin: 0 auto;
+}
+/* Terms checkbox layout and styles for auth forms */
+.termsWrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 6px 0 4px 0;
+}
+
+.termsCheckbox {
+  width: 18px;
+  height: 18px;
+  appearance: none;
+  -webkit-appearance: none;
+  border: 2px solid rgba(0,0,0,0.12);
+  border-radius: 6px;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  background: white;
+  flex-shrink: 0;
+}
+.termsCheckbox:checked {
+  background: var(--color-primary-accent-active, #0b5a76);
+  border-color: var(--color-primary-accent-active, #0b5a76);
+}
+.termsCheckbox:checked::after {
+  content: '\2714';
+  position: absolute;
+  left: 3px;
+  top: -1px;
+  font-size: 14px;
+  color: white;
+}
+
+.termsText {
+  font-size: 0.85rem;
+  color: var(--color-text);
+  line-height: 1.2;
+}
+
+.termsLink {
+  color: var(--color-primary-accent);
+  font-weight: 600;
+  text-decoration: none;
+  margin-left: 4px;
+}
+.termsLink:hover {
+  text-decoration: underline;
+}
+
+/* Password Strength Indicator */
+.passwordStrength {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.strengthBar {
+  flex: 1;
+  height: 4px;
+  background-color: #e5e7eb;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.strengthFill {
+  height: 100%;
+  transition: width 0.3s ease, background-color 0.3s ease;
+  border-radius: 2px;
+}
+
+.strengthLabel {
+  font-size: 0.75rem;
+  font-weight: 500;
+  min-width: 70px;
+  text-align: right;
+}
+
+.passwordHint {
+  margin-top: 0.25rem;
+}
+
+.passwordHint small {
+  font-size: 0.75rem;
+  color: #6b7280;
+  line-height: 1.3;
+}

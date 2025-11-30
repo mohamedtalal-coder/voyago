@@ -1,0 +1,226 @@
+.contactsPage {
+  padding: 1rem;
+}
+
+.header {
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  font-size: 1.75rem;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.contactsGrid {
+  display: grid;
+  gap: 1rem;
+}
+
+.contactCard {
+  background: var(--bg-primary);
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid var(--border-color);
+}
+
+.contactCard.unread {
+  border-left: 4px solid var(--primary-color);
+}
+
+.contactHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.contactInfo h3 {
+  margin: 0;
+  color: var(--text-primary);
+  font-size: 1rem;
+}
+
+.contactInfo p {
+  margin: 0.25rem 0 0 0;
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+}
+
+.date {
+  color: var(--text-secondary);
+  font-size: 0.75rem;
+}
+
+.subject {
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.message {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.contactFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.status {
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.status.replied {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.status.read {
+  background: #e0f2fe;
+  color: #0284c7;
+}
+
+.status.pending {
+  background: #fef3c7;
+  color: #d97706;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.replyBtn,
+.deleteBtn {
+  padding: 0.5rem 0.75rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.75rem;
+  transition: background 0.2s;
+}
+
+.replyBtn {
+  background: #3b82f6;
+  color: white;
+}
+
+.replyBtn:hover {
+  background: #2563eb;
+}
+
+.deleteBtn {
+  background: #ef4444;
+  color: white;
+}
+
+.deleteBtn:hover {
+  background: #dc2626;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+}
+
+.error {
+  background: #fee2e2;
+  color: #dc2626;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.success {
+  background: #dcfce7;
+  color: #16a34a;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.emptyState {
+  text-align: center;
+  padding: 3rem;
+  color: var(--text-secondary);
+  background: var(--bg-primary);
+  border-radius: 12px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .contactsPage {
+    padding: 0.75rem;
+  }
+  
+  .header h1 {
+    font-size: 1.5rem;
+  }
+  
+  .contactCard {
+    padding: 1rem;
+  }
+  
+  .contactHeader {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .date {
+    order: -1;
+  }
+  
+  .contactFooter {
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: stretch;
+  }
+  
+  .actions {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  
+  .replyBtn,
+  .deleteBtn {
+    flex: 1;
+    min-width: 100px;
+  }
+}
+
+@media (max-width: 576px) {
+  .contactsPage {
+    padding: 0.5rem;
+  }
+  
+  .header h1 {
+    font-size: 1.25rem;
+  }
+  
+  .contactCard {
+    padding: 0.75rem;
+  }
+  
+  .subject {
+    font-size: 0.95rem;
+  }
+  
+  .message {
+    font-size: 0.9rem;
+  }
+  
+  .emptyState {
+    padding: 2rem 1rem;
+  }
+}

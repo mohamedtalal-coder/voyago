@@ -1,0 +1,214 @@
+.testimonials-section-container {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    font-family: var(--font-sans, Arial, sans-serif);
+    color: var(--color-text, #0B3D5E);
+}
+
+.header-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.section-title {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: var(--color-text, #333);
+}
+
+.controls {
+    display: flex;
+    gap: 8px;
+}
+
+.travel-nav-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+}
+
+.travel-nav-button-prev {
+    border: 1px solid var(--color-border, #ddd);
+    background-color: transparent;
+    color: var(--color-text-muted, #999);
+}
+
+.travel-nav-button-next {
+    background-color: var(--color-dark-blue);
+    border: 1px solid var(--color-dark-blue);
+    color: var(--color-primary-text);
+}
+
+.travel-nav-button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    pointer-events: none;
+    background-color: var(--color-button-disabled-bg) !important;
+    border-color: var(--color-button-disabled-border) !important;
+    color: var(--color-button-disabled-text) !important;
+    transform: scale(1) !important;
+}
+
+.travel-nav-button-prev:hover {
+    border-color: var(--color-text-muted);
+    color: var(--color-text);
+    transform: scale(1.05);
+}
+
+.travel-nav-button-next:hover {
+    background: var(--color-primary-accent-hover);
+    border-color: var(--color-primary-accent-hover);
+    transform: scale(1.05);
+}
+
+.slider-container {
+    overflow: hidden;
+    padding: 10px 0;
+}
+
+.testimonials-track {
+    display: flex;
+    transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    gap: 25px;
+}
+
+.testimonial-card {
+    box-sizing: border-box;
+    background-color: var(--color-card-background);
+    border-radius: 10px;
+    box-shadow: var(--shadow-card);
+    padding: 30px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--color-border);
+}
+
+.card-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* ---------------------------------- */
+/* Quote icons and z-index to fix image overlap issue */
+/* ---------------------------------- */
+
+.quote-icon-top,
+.quote-icon-bottom {
+    color: var(--color-border, #f0f0f0);
+    font-size: 4rem;
+    position: absolute;
+    opacity: 1;
+    z-index: 1;
+    /* Icon stays in the back */
+}
+
+.quote-icon-top {
+    top: 10px;
+    left: 20px;
+    right: auto;
+}
+
+.quote-icon-bottom {
+    bottom: 0px;
+    right: 20px;
+    left: auto;
+    transform: rotate(180deg);
+}
+
+.quote-text {
+    font-size: 1rem;
+    color: var(--color-text-muted, #555);
+    line-height: 1.8;
+    margin: 30px 0;
+    font-style: italic;
+    font-weight: 400;
+    position: relative;
+    z-index: 3;
+    /* Text stays in the front */
+}
+
+.client-info {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    position: relative;
+    /* Ensures it stays above the quote icon */
+    z-index: 3;
+}
+
+.client-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-inline-end: 15px;
+    border: 2px solid var(--color-primary, #0B3D5E);
+    background-size: cover;
+    background-position: center;
+}
+
+.client-name {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--color-text, #333);
+}
+
+/* ---------------------------------- */
+/* RTL (Arabic language) fixes */
+/* ---------------------------------- */
+
+[dir='rtl'] .testimonials-section-container {
+    direction: rtl;
+}
+
+[dir='rtl'] .header-controls {
+    flex-direction: row-reverse;
+}
+
+[dir='rtl'] .section-title {
+    text-align: right;
+}
+
+[dir='rtl'] .controls {
+    flex-direction: row-reverse;
+}
+
+[dir='rtl'] .testimonial-card {
+    text-align: right;
+}
+
+[dir='rtl'] .quote-icon-top {
+    left: auto;
+    right: 20px;
+}
+
+[dir='rtl'] .quote-icon-bottom {
+    right: auto;
+    left: 20px;
+}
+
+[dir='rtl'] .client-info {
+    flex-direction: row-reverse;
+}
+
+/* ---------------------------------- */
+/* Responsive styles */
+/* ---------------------------------- */
+
+@media (max-width: 900px) {
+    .testimonial-card {
+        min-width: calc(100% - 12.5px) !important;
+    }
+}

@@ -1,0 +1,53 @@
+{
+  "title": "نتائج البحث",
+  "searchPlaceholder": "ابحث عن جولات، وجهات...",
+  "filters": "الفلاتر",
+  "sortBy": "ترتيب حسب",
+  "priceRange": "نطاق السعر",
+  "duration": "المدة",
+  "category": "الفئة",
+  "rating": "التقييم",
+  "clearFilters": "مسح الفلاتر",
+  "applyFilters": "تطبيق الفلاتر",
+  "resultsFound": "{{count}} نتيجة",
+  "noResults": "لم يتم العثور على نتائج",
+  "noResultsMessage": "حاول تعديل البحث أو الفلاتر",
+  "sortOptions": {
+    "recommended": "موصى به",
+    "priceLow": "السعر: من الأقل للأعلى",
+    "priceHigh": "السعر: من الأعلى للأقل",
+    "rating": "الأعلى تقييماً",
+    "newest": "الأحدث"
+  },
+  "categories": {
+    "all": "جميع الفئات",
+    "tours": "الجولات",
+    "activities": "الأنشطة",
+    "transportation": "النقل",
+    "packages": "الباقات"
+  },
+  "durationOptions": {
+    "any": "أي مدة",
+    "halfDay": "نصف يوم",
+    "fullDay": "يوم كامل",
+    "multiDay": "عدة أيام"
+  },
+  "date": "التاريخ",
+  "time": "الوقت",
+  "flexible": "مرن",
+  "transportation": "النقل",
+  "included": "متضمن",
+  "perPerson": "شخص",
+  "viewTour": "عرض الجولة",
+  "activeFilters": "معايير البحث الخاصة بك",
+  "clearAll": "مسح الكل",
+  "tour": "جولة",
+  "min": "الحد الأدنى",
+  "max": "الحد الأقصى",
+  "from": "من",
+  "anyRating": "أي تقييم",
+  "rating45": "4.5+ نجوم",
+  "rating4": "4+ نجوم",
+  "rating35": "3.5+ نجوم",
+  "bus": "حافلة"
+}

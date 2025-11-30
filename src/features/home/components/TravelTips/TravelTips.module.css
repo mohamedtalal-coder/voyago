@@ -1,0 +1,221 @@
+.packages-container-wrapper {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.packages-section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-text, #333);
+    margin-bottom: 40px;
+}
+
+.packages-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.package-card {
+    background-color: var(--color-card-background, #ffffff);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--color-border, #e9e9e9);
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+}
+
+.package-image-wrapper {
+    height: 200px;
+    overflow: hidden;
+}
+
+.package-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.package-content {
+    padding: 15px 20px 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+.package-category {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--color-text-muted, #888);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+}
+
+.package-title {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--color-text, #333);
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.package-price {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--color-border, #f0f0f0);
+    display: flex;
+    align-items: baseline;
+}
+
+.price-currency {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--color-dark-blue);
+    margin-inline-end: 2px;
+}
+
+.price-value {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--color-dark-blue);
+    line-height: 1;
+}
+
+.price-unit {
+    font-size: 0.8rem;
+    color: var(--color-text-muted, #888);
+    font-weight: 400;
+    margin-inline-start: 5px;
+}
+
+.package-features-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: auto;
+    flex-grow: 1;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    color: var(--color-text-light, #555);
+    margin-bottom: 12px;
+    font-weight: 400;
+}
+
+.feature-icon {
+    color: var(--color-dark-blue);
+    margin-inline-end: 10px;
+    min-width: 16px;
+    font-size: 1rem;
+}
+
+
+.book-button {
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 25px;
+    background-color: transparent;
+    color: var(--color-dark-blue);
+    border: 2px solid var(--color-dark-blue);
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.book-button:hover {
+    background-color: var(--color-dark-blue);
+    color: var(--color-primary-text);
+    box-shadow: var(--shadow-hover);
+}
+
+
+@media (max-width: 1024px) {
+    .packages-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .packages-container-wrapper {
+        padding: 40px 15px;
+    }
+    
+    .packages-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    
+    .package-image-wrapper {
+        height: 160px;
+    }
+    
+    .package-content {
+        padding: 12px 15px 15px;
+    }
+    
+    .price-value {
+        font-size: 1.8rem;
+    }
+    
+    .packages-section-title {
+        font-size: 1.75rem;
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 600px) {
+    .packages-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .packages-section-title {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .packages-container-wrapper {
+        padding: 30px 10px;
+    }
+    
+    .packages-section-title {
+        font-size: 1.35rem;
+        margin-bottom: 20px;
+    }
+    
+    .package-image-wrapper {
+        height: 180px;
+    }
+    
+    .package-content {
+        padding: 10px 12px 12px;
+    }
+    
+    .package-title {
+        font-size: 1rem;
+    }
+    
+    .price-value {
+        font-size: 1.6rem;
+    }
+    
+    .feature-item {
+        font-size: 0.85rem;
+        margin-bottom: 10px;
+    }
+    
+    .book-button {
+        padding: 12px 0;
+        font-size: 0.95rem;
+    }
+}

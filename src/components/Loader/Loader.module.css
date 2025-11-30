@@ -1,0 +1,87 @@
+.loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.spinner {
+  border: 2px solid transparent;
+  border-top: 2px solid var(--color-primary-accent);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+/* Size variants */
+.size-small .spinner {
+  width: 20px;
+  height: 20px;
+  border-width: 2px;
+}
+
+.size-medium .spinner {
+  width: 40px;
+  height: 40px;
+  border-width: 3px;
+}
+
+.size-large .spinner {
+  width: 60px;
+  height: 60px;
+  border-width: 4px;
+}
+
+/* Color variants */
+.color-primary .spinner {
+  border-top-color: var(--color-primary-accent);
+}
+
+.color-secondary .spinner {
+  border-top-color: var(--color-text-light);
+}
+
+.color-white .spinner {
+  border-top-color: white;
+}
+
+/* Full screen variant */
+.fullScreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color-glass-bg);
+  z-index: 9999;
+}
+
+.fullScreen.dark {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.message {
+  font-size: 0.9rem;
+  color: var(--color-text);
+}
+
+/* Inline variant for buttons */
+.inline {
+  display: inline-flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.inline .spinner {
+  flex-shrink: 0;
+}
+
+.inline .message {
+  font-size: inherit;
+  color: inherit;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

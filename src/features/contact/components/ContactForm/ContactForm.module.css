@@ -1,0 +1,89 @@
+/* Container for the entire contact form */
+.contactFormContainer {
+  background: var(--color-glass-bg);
+  backdrop-filter: blur(10px);
+  width: 100%;
+  max-width: 700px;
+  border-radius: 24px;
+  padding: 30px;
+  gap: 30px;
+  border: 1px solid var(--color-glass-border);
+  box-shadow: var(--shadow-card);
+  margin: 0 auto;
+  transform: rotate(0deg);
+  opacity: 1;
+}
+
+/* Each input or textarea group */
+.formGroup {
+  margin-bottom: 1.5rem;
+}
+
+/* Label for each input */
+.formLabel {
+  display: block;
+  font-weight: 600;
+  color: var(--color-dark-blue);
+  margin-bottom: 0.5rem;
+  margin-left: 0.25rem;
+  font-size: 1rem;
+}
+
+/* Input and textarea styles */
+.formControl {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-input-border);
+  background-color: var(--color-input-bg);
+  transition: all 0.2s ease-in-out;
+  font-size: 1rem;
+  color: var(--color-text);
+}
+
+/* Input focus effect */
+.formControl:focus {
+  outline: none;
+  border-color: var(--color-input-focus);
+  box-shadow: 0 0 0 3px rgba(24, 59, 86, 0.2);
+}
+
+/* Placeholder text color */
+.formControl::placeholder {
+  color: var(--color-placeholder);
+}
+
+/* Textarea specific styles */
+.textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Responsive styles for tablets */
+@media (max-width: 768px) {
+  .contactFormContainer {
+    padding: 1.5rem;
+
+  }
+  
+  .title {
+    font-size: 2rem;
+  }
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 576px) {
+  .contactFormContainer {
+    padding: 1rem;
+    margin: auto;
+  }
+  
+  .formLabel {
+    font-size: 0.9rem;
+  }
+  
+  .formControl {
+    padding: 0.6rem 0.8rem;
+    font-size: 0.9rem;
+  }
+}
