@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import { getServices, createService, updateService, deleteService } from '../../api/adminAPI';
 import { uploadSingleImage } from '../../api/uploadAPI';
+import { handleImageError, PLACEHOLDER_SERVICE } from '../../../../lib/imageUtils';
 import styles from './AdminServices.module.css';
 
 const AdminServices = () => {
@@ -247,7 +248,7 @@ const AdminServices = () => {
                         src={service.img} 
                         alt={t(service.titleKey, { defaultValue: service.titleKey })} 
                         className={styles.thumbnail}
-                        onError={(e) => e.target.src = '/images/placeholder.jpg'}
+                        onError={(e) => handleImageError(e, 'service')}
                       />
                     ) : (
                       <span className={styles.noImage}>{t('admin.servicesPage.noImage')}</span>

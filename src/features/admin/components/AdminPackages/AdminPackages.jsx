@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import { getPackages, createPackage, updatePackage, deletePackage } from '../../api/adminAPI';
 import { uploadSingleImage, uploadMultipleImages } from '../../api/uploadAPI';
+import { handleImageError, PLACEHOLDER_PACKAGE } from '../../../../lib/imageUtils';
 import styles from './AdminPackages.module.css';
 
 const initialFormState = {
@@ -282,7 +283,7 @@ const AdminPackages = () => {
                       src={pkg.img} 
                       alt={t(pkg.titleKey, { defaultValue: pkg.titleKey })} 
                       className={styles.thumbnail}
-                      onError={(e) => e.target.src = '/images/placeholder.jpg'}
+                      onError={(e) => handleImageError(e, 'package')}
                     />
                   </td>
                   <td>{t(pkg.titleKey, { defaultValue: pkg.titleKey })}</td>
